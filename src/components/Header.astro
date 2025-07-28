@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import Icon from "../assets/icon.png";
+
+import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header class="site-header">
@@ -25,7 +27,10 @@ import Icon from "../assets/icon.png";
       <span class="site-title">Astrog@mers</span>
     </div>
 
-    <a href="/contact" class="contact-link">Me contacter</a>
+    <div class="left-nav">
+      <ThemeToggle />
+      <a href="/contact" class="contact-link">Me contacter</a>
+    </div>
   </div>
 </header>
 
@@ -103,5 +108,11 @@ import Icon from "../assets/icon.png";
     max-width: 83rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
   }
 </style>

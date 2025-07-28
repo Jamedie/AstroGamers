@@ -1,10 +1,43 @@
 ---
 // Page section component
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Import global styles
+import "../styles/fonts.css";
+import "../styles/global.css";
 ---
 
-<BaseLayout>
-  <h2>Me contacter</h2>
-  <p>Contenu de la page Me contacter</p>
-</BaseLayout>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Astrog@mers</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main></main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+</style>

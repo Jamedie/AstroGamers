@@ -1,0 +1,53 @@
+---
+// Page section component
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Import global styles
+import "../styles/fonts.css";
+import "../styles/global.css";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>404 - Page non trouvée</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <h1>404</h1>
+      <p>Oups ! Cette page n'existe pas ou a été déplacée.</p>
+      <a href="/">Retour à l'accueil</a>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+  }
+</style>

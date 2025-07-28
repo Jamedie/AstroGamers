@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import HeroImage from "../assets/hero.png"; // ton image
+import HeroImage from "../assets/hero.png";
+import Icon from "./Icon.astro";
 ---
 
 <section class="hero">
@@ -12,7 +13,7 @@ import HeroImage from "../assets/hero.png"; // ton image
         Passionné de code & pixels : partage de projets, tutoriels, réflexions
         et expérimentations cosmiques.
       </p>
-      <a href="#about" class="cta">Découvrir</a>
+      <a href="#about" class="cta">Découvrir </a>
       <div class="stats">
         <div><strong>800+</strong> visiteurs</div>
         <div><strong>95%</strong> taux de fun</div>
@@ -32,6 +33,11 @@ import HeroImage from "../assets/hero.png"; // ton image
       />
     </div>
   </div>
+
+  <!-- Chevron pour le scroll -->
+  <a href="#about" class="hero-chevron" aria-label="Scroll vers la suite">
+    <span class="icon light"><Icon icon="arrow-down" /></span></a
+  >
 </section>
 
 <style>
@@ -106,12 +112,26 @@ import HeroImage from "../assets/hero.png"; // ton image
     object-fit: cover;
   }
 
-  /* .hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    object-fit: cover;
-  } */
+  .hero-chevron {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--accent-regular);
+    animation: bounce 2s infinite;
+    text-decoration: none;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(10px);
+    }
+  }
 
   @media (max-width: 768px) {
     .hero-content {

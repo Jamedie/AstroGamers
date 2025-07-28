@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Icon from "../assets/icon.png";
+import Icon from "../assets/logo.png";
 
 import ThemeToggle from "./ThemeToggle.astro";
 ---
@@ -19,12 +19,9 @@ import ThemeToggle from "./ThemeToggle.astro";
         src={Icon}
         alt="Logo Astrog@mers"
         class="logo"
-        width={40}
-        height={40}
         loading="eager"
         decoding="async"
       />
-      <span class="site-title">Astrog@mers</span>
     </div>
 
     <div class="left-nav">
@@ -37,7 +34,6 @@ import ThemeToggle from "./ThemeToggle.astro";
 <style>
   .site-header {
     background-color: var(--gray-50);
-    padding: 1rem 0;
     box-shadow: var(--shadow-sm);
     height: var(--header-height);
   }
@@ -58,9 +54,8 @@ import ThemeToggle from "./ThemeToggle.astro";
   }
 
   .logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 2rem;
+    width: 100%;
+    max-height: var(--header-height);
   }
 
   .site-title {
@@ -79,7 +74,7 @@ import ThemeToggle from "./ThemeToggle.astro";
 
   .site-nav a {
     text-decoration: none;
-    color: var(--gray-200);
+    color: var(--gray-900);
     font-weight: 500;
     transition: color var(--theme-transition);
   }

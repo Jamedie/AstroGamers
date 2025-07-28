@@ -1,10 +1,102 @@
 ---
 // Page section component
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Import global styles
+import "../styles/fonts.css";
+import "../styles/global.css";
 ---
 
-<BaseLayout>
-  <h2>A propos</h2>
-  <p>Contenu de la page À propos</p>
-</BaseLayout>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A propos - Astrog@mers</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section id="a-propos">
+        <section>
+          <h2>À propos de moi</h2>
+          <p>
+            Je m'appelle <strong>Jimmy Gaucher</strong>, un passionné du web qui
+            développe ce site dans son coin, juste pour le plaisir de créer,
+            partager et expérimenter.
+          </p>
+          <p>
+            Ce projet est entièrement personnel, sans but commercial. Il reflète
+            mes idées, mes tests, mes envies… parfois mes folies numériques.
+          </p>
+          <p>
+            Ici, pas de collecte de données, pas de cookies, pas de traçage.
+            Juste un site simple, propre et libre.
+          </p>
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Mentions légales</h2>
+          <p>
+            <strong>Éditeur du site :</strong><br />
+            Nom : <strong>Jimmy Gaucher</strong><br />
+            Statut : Particulier<br />
+            Contact : <a href="mailto:contact@jimmy.gaucher@hotmail.com"
+              >contact@jimmy.gaucher@hotmail.com</a
+            >
+          </p>
+
+          <p>
+            <strong>Hébergement :</strong>
+            Ce site est hébergé par <strong>Netlify</strong>.<br />
+            Site web : <a href="https://www.netlify.com" target="_blank"
+              >https://www.netlify.com</a
+            >
+          </p>
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Règles de confidentialité</h2>
+          <p>
+            Ce site ne collecte <strong>aucune donnée personnelle</strong>, que
+            ce soit par formulaire, cookie ou tout autre moyen.
+          </p>
+          <p>
+            Vous pouvez naviguer librement sans aucune surveillance ni
+            enregistrement d'informations.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  #a-propos {
+    padding: 2rem 1rem;
+  }
+</style>

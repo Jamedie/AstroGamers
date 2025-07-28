@@ -11,9 +11,9 @@
 
 ## ✅ Étape 2 – Section Hero (écran d’accueil)
 
-- [ ] Créer une section `hero` pleine hauteur (`100vh`)
-- [ ] Ajouter un titre fort, un sous-titre et un bouton ou icône vers la section suivante
-- [ ] Ajouter un scroll fluide vers une ancre (`#about`, `#projects`, etc.)
+- [x] Créer une section `hero` pleine hauteur (`100vh`)
+- [x] Ajouter un titre fort, un sous-titre et un bouton ou icône vers la section suivante
+- [ ] Ajouter un scroll fluide vers une ancre (``, `#projects`, etc.)
 - [ ] Styliser avec les variables CSS ou une nouvelle palette
 
 ---
@@ -21,8 +21,8 @@
 ## ✅ Étape 3 – Page About
 
 - [ ] Ajouter une section "À propos de moi" (bio, image, compétences, etc.)
-- [ ] Ajouter les **mentions légales** (nom, hébergeur, contact, etc.)
-- [ ] Ajouter une section sur la **confidentialité des données** (RGPD simplifié)
+- [x] Ajouter les **mentions légales** (nom, hébergeur, contact, etc.)
+- [x] Ajouter une section sur la **confidentialité des données** (RGPD simplifié)
 
 ---
 

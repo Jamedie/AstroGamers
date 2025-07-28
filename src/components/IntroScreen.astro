@@ -1,3 +1,24 @@
+<script is:inline>
+  const alreadySeen = sessionStorage.getItem("hasSeenIntro");
+
+  if (!alreadySeen) {
+    document.documentElement.classList.add("with-intro");
+    sessionStorage.setItem("hasSeenIntro", "true");
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const intro = document.getElementById("intro-screen");
+      if (!intro) return;
+
+      setTimeout(() => {
+        intro.classList.add("intro-hidden");
+        setTimeout(() => {
+          intro.remove();
+        }, 800);
+      }, 1000);
+    });
+  }
+</script>
+
 <div id="intro-screen">
   <div class="intro-content">
     <div class="logo" aria-label="Logo Astrog@mers"></div>
@@ -10,11 +31,10 @@
     position: fixed;
     inset: 0;
     background: var(--gray-999);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: 9999;
-
     opacity: 1;
     visibility: visible;
     transition:
@@ -22,42 +42,30 @@
       visibility 0.8s ease;
   }
 
-  /* Disparition */
+  html.with-intro #intro-screen {
+    display: flex;
+  }
+
   #intro-screen.intro-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
 
-  #intro-screen .logo {
+  .logo {
     width: 100px;
     height: 100px;
     margin: 0 auto 1rem;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: pulse 1.5s ease-in-out infinite;
-
     background-image: url("/assets/icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 24px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: var(--transition-theme);
-  }
-
-  [data-theme="dark"]#intro-screen .logo {
-    background-image: url("/assets/icon.png");
+    animation: pulse 1.5s ease-in-out infinite;
   }
 
   .intro-content {
     text-align: center;
     animation: fadeInUp 1s ease-out forwards;
-  }
-
-  .intro-content img {
-    width: 130px;
-    height: auto;
-    margin-bottom: 1rem;
   }
 
   @keyframes fadeInUp {

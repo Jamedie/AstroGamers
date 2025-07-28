@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/orbitron/orbitron-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/orbitron/orbitron-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("/fonts/oxanium/oxanium-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oxanium";
+  src: url("/fonts/oxanium/oxanium-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/spacemono/spacemono-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}

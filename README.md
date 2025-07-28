@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# 🌠 Astrog\@mers
 
-```sh
-npm create astro@latest -- --template basics
+Un projet personnel mêlant **développement web**, **expérimentation UI** et **univers du jeu vidéo**.
+Créé avec [Astro](https://astro.build), hébergé sur [Netlify](https://www.netlify.com/).
+
+## 🚀 Objectifs
+
+- Présenter mes projets, idées et expériences autour du code & gaming
+- Tester des interfaces modernes dans un style futuriste
+- Apprendre, expérimenter, partager
+
+## 🔧 Stack technique
+
+- [Astro](https://astro.build/) (avec BaseLayout, composants, routing)
+- HTML + CSS Modules (sans Tailwind)
+- Déploiement via Netlify
+
+## 🎨 Polices utilisées
+
+| Usage              | Police         | Contexte                                       |
+| ------------------ | -------------- | ---------------------------------------------- |
+| Logo & titres      | **Orbitron**   | Futuriste, spatial, gaming                     |
+| Boutons & badges   | **Oxanium**    | Moderne, carré, lisible, cohérent              |
+| Codes ou citations | **Space Mono** | Monospace technique, parfait pour blocs code   |
+| Sous-titres & UI   | **Oxanium**    | Science‑fiction sobre, rend l’interface fluide |
+
+Les polices sont importées depuis Google Fonts ou intégrées localement selon le besoin.
+
+## 📁 Structure du projet
+
+```
+src/
+├── components/
+│   └── Header.astro / Hero.astro / Icon.astro ...
+├── layouts/
+│   └── BaseLayout.astro
+├── pages/
+│   ├── index.astro
+│   ├── about.astro
+│   └── contact.astro
+├── assets/
+│   └── images, icônes SVG, logos
+├── styles/
+│   └── global.css
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📡 Déploiement
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Le site est déployé en continu via Netlify :
+🔗 [https://astrogamers.netlify.app](https://astrogamers.netlify.app)

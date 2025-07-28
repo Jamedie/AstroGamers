@@ -71,13 +71,20 @@
   --text-5xl: 4.5rem;
 
   /* Fonts */
+  /* Fallback système */
   --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-body: "Public Sans", var(--font-system);
-  --font-brand: Rubik, var(--font-system);
+
+  /* Polices principales */
+  --font-brand: "Orbitron", var(--font-system); /* Pour titres, logo */
+  --font-body: "Oxanium", var(--font-system); /* Pour textes, UI */
+  --font-code: "Space Mono", monospace; /* Pour blocs code */
 
   /* Transitions */
   --theme-transition: 0.2s ease-in-out;
+
+  /* Layout */
+  --header-height: 80px;
 }
 
 :root.theme-dark {

@@ -1,0 +1,126 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "../assets/hero.png"; // ton image
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="subtitle">Bienvenue sur Astrog@mers</p>
+      <h1 class="title">Explorez l’univers entre jeux vidéo & développement</h1>
+      <p class="description">
+        Passionné de code & pixels : partage de projets, tutoriels, réflexions
+        et expérimentations cosmiques.
+      </p>
+      <a href="#about" class="cta">Découvrir</a>
+      <div class="stats">
+        <div><strong>800+</strong> visiteurs</div>
+        <div><strong>95%</strong> taux de fun</div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <Image
+        src={HeroImage}
+        alt="Hero Astrog@mers"
+        width={600}
+        height={400}
+        format="webp"
+        class="hero-img"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: calc(100vh - var(--header-height, 80px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-999);
+    overflow: hidden;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    flex: 1 1 500px;
+  }
+
+  .hero-text .title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    color: var(--accent-regular);
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    margin-bottom: 1.5rem;
+    color: var(--gray-300);
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-regular);
+    color: var(--accent-text-over);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .stats {
+    display: flex;
+    gap: 2rem;
+    color: var(--gray-200);
+    font-weight: 500;
+  }
+
+  .hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  /* .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  } */
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .hero-text .title {
+      font-size: 2.2rem;
+    }
+  }
+</style>

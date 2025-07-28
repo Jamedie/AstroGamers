@@ -2,6 +2,8 @@
 // src/layouts/BaseLayout.astro
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+// Import global styles
+import "../styles/global.css";
 ---
 
 <html lang="fr">
@@ -14,7 +16,7 @@ import Footer from "../components/Footer.astro";
 
     <main>
       <slot />
-      <!-- Le contenu spécifique à chaque page apparaîtra ici -->
+      <!-- Here will be the page-specific content -->
     </main>
 
     <Footer />

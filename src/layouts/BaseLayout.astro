@@ -1,0 +1,22 @@
+---
+// src/layouts/BaseLayout.astro
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mon site Astro</title>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <slot />
+      <!-- Le contenu spécifique à chaque page apparaîtra ici -->
+    </main>
+
+    <Footer />
+  </body>
+</html>

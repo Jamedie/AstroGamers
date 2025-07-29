@@ -13,7 +13,7 @@
 
 - [x] Créer une section `hero` pleine hauteur (`100vh`)
 - [x] Ajouter un titre fort, un sous-titre et un bouton ou icône vers la section suivante
-- [ ] Ajouter un scroll fluide vers une ancre (``, `#projects`, etc.)
+- [x] Ajouter un scroll fluide vers une ancre (``, `#projects`, etc.)
 - [ ] Styliser avec les variables CSS ou une nouvelle palette
 
 ---

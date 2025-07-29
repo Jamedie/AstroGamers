@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import HeroImage from "../assets/hero.png";
-import AstroWheel from "../assets/astro-wheel.png";
-import BgStars from "../assets/bg-stars.jpg";
+import HeroImage from "../assets/hero.webp";
+import AstroWheel from "../assets/astro-wheel.webp";
 import Icon from "./Icon.astro";
 ---
 
@@ -57,7 +56,11 @@ import Icon from "./Icon.astro";
   </div>
 
   <!-- Chevron pour le scroll -->
-  <a href="#about" class="hero-chevron" aria-label="Scroll vers la suite">
+  <a
+    href="#about-preview"
+    class="hero-chevron"
+    aria-label="Scroll vers la suite"
+  >
     <span class="icon light"><Icon icon="arrow-down" /></span></a
   >
 </section>
@@ -71,6 +74,7 @@ import Icon from "./Icon.astro";
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 2rem;
   }
 
   .hero-content {

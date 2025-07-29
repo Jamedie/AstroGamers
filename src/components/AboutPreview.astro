@@ -1,30 +1,41 @@
 ---
 import { Image } from "astro:assets";
+import AboutPreviewGirl from "../assets/AboutPreviewGirl.webp";
+import AboutPreviewDevice from "../assets/AboutPreviewDevice.webp";
+import AstroWheel from "../assets/astro-wheel.webp";
 import Icon from "./Icon.astro";
 ---
 
 <section id="about-preview">
   <div class="about-grid">
     <div class="images-column">
-      <img
-        src="/assets/AboutPreviewGirl.webp"
-        alt="Femme voyant l’avenir"
+      <Image
+        src={AboutPreviewGirl}
+        alt="femme voyant l’avenir"
         class="top-left"
+        loading="lazy"
+        decoding="async"
       />
-      <img
-        src="/assets/AboutPreviewDevice.webp"
-        alt="Perhipheriques"
+      <Image
+        src={AboutPreviewDevice}
+        alt="périphériques"
         class="bottom-right"
+        loading="lazy"
+        decoding="async"
       />
-      <img
-        src="/assets/astro-wheel.webp"
+      <Image
+        src={AstroWheel}
         alt="Roue du zodiaque"
         class="wheel"
+        loading="lazy"
+        decoding="async"
       />
     </div>
     <div class="text-column">
       <p class="subtitle">A propos de nous</p>
-      <h4>Savoir à l’avance si ta session va briller… ou partir en flame</h4>
+      <h2>
+        Savoir à l’avance si ta session va briller… ou partir en <em>flame</em>
+      </h2>
       <p>
         Astrog@mers, c’est l’horoscope qui comprend tes ranked, tes clutchs
         ratés et ta malchance dans le matchmacking. Ici, chaque signe reçoit un

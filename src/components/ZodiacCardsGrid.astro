@@ -1,0 +1,44 @@
+---
+// src/components/ZodiacGrid.astro
+import { zodiacSigns } from "../data/zodiac";
+import ZodiacCard from "./ZodiacCard.astro";
+---
+
+<section class="zodiac-grid">
+  <p>Signes du zodiaque</p>
+
+  <h2 class="label">Découvre ton signe astrologique</h2>
+
+  <div class="grid">
+    {
+      zodiacSigns.map((sign) => (
+        <ZodiacCard
+          name={sign.name}
+          slug={sign.slug}
+          image={sign.image}
+          dateRange={sign.dateRange}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .zodiac-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--gray-999);
+    border-radius: 3rem 3rem 0 0;
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 3fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+</style>

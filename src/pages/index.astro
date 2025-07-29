@@ -3,6 +3,9 @@
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
 import AboutPreview from "../components/AboutPreview.astro";
+import ZodiacCardsGrid from "../components/ZodiacCardsGrid.astro";
+import ZodiacFinder from "../components/ZodiacFinder.astro";
+
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -10,5 +13,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout>
   <Hero />
   <AboutPreview />
-  <!-- <ZodiacGrid /> -->
+  <ZodiacCardsGrid />
+  <ZodiacFinder />
 </BaseLayout>

@@ -1,0 +1,64 @@
+---
+// src/components/ZodiacCard.astro
+const { name, slug, image, dateRange } = Astro.props;
+---
+
+<div class="zodiac-card-container">
+  <a href={`/signe/${slug}`} class="zodiac-card">
+    <img
+      src={image}
+      alt={`Symbole du signe ${name}`}
+      class="zodiac-icon"
+      loading="lazy"
+    />
+    <h5>{name}</h5>
+    <p>{dateRange}</p>
+    <p class="cta-link">Découvrir</p>
+  </a>
+</div>
+
+<style>
+  .zodiac-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--gray-700);
+
+    border-radius: 1rem 0 0 0;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .zodiac-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(128, 0, 255, 0.4);
+  }
+
+  .zodiac-icon {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+  }
+
+  .zodiac-icon-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: inline-flex;
+  }
+
+  .cta {
+    font-size: 0.75rem;
+    color: #aaa;
+    text-decoration: underline;
+    font-family: "Oxanium", sans-serif;
+  }
+</style>

@@ -36,7 +36,27 @@
 
 ---
 
-## ✅ Étape 5 –
+## ✅ Étape 5 – a propos de nous
+
+- [x] Ajouter une section "À propos de nous" (bio, image, compétences, etc.)
+- [x] Le Style et le contenus de ce composant.
+
+---
+
+## ✅ Étape 6 – Horoscope et calcul du signe
+
+- [x] Outil de calcul du signe astrologique
+- [x] L'utilisateur entre sa date de naissance
+- [x] Le site affiche dynamiquement son signe (sans conservation de données)
+
+---
+
+## ✅ Étape 7 - Grille des 12 signes :
+
+- [ ] Présentation sous forme de cartes cliquables
+- [ ] Chaque carte mène à une page dédiée avec l’horoscope du signe choisi
+
+---
 
 ## 📌 Bonus idées (pour plus tard)
 

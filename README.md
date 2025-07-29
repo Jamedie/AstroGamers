@@ -5,9 +5,12 @@ Créé avec [Astro](https://astro.build), hébergé sur [Netlify](https://www.ne
 
 ## 🚀 Objectifs
 
-- Présenter mes projets, idées et expériences autour du code & gaming
-- Tester des interfaces modernes dans un style futuriste
-- Apprendre, expérimenter, partager
+Ce projet a pour but de fournir quotidiennement des horoscopes personnalisés à destination des joueurs de jeux compétitifs (MOBA, Shooter, Battle Royale).
+Chaque jour, une requête automatique génère 12 horoscopes uniques – un par signe astrologique – avec un ton drôle, stylé et légèrement piquant, sans jamais tomber dans la toxicité.
+
+Ces horoscopes combinent humour, réalisme in-game (matchmaking, teammates imprévisibles, loot frustrant…) et une touche d’astrologie fictive adaptée à l’univers du gaming compétitif.
+
+L’objectif est de proposer un contenu divertissant, décalé et engageant pour les joueurs, tout en restant bienveillant et ancré dans l’expérience de jeu quotidienne.
 
 ## 🔧 Stack technique
 
@@ -31,17 +34,28 @@ Les polices sont importées depuis Google Fonts ou intégrées localement selon 
 ```
 src/
 ├── components/
-│   └── Header.astro / Hero.astro / Icon.astro ...
-├── layouts/
-│   └── BaseLayout.astro
+│   ├── HeroSection.astro
+│   ├── AboutPreview.astro
+│   ├── ZodiacFinder.astro
+│   ├── ZodiacCard.astro
+│   ├── ZodiacGrid.astro
+│   ├── ZodiacPageContent.astro
+│   ├── AboutMe.astro
+│   ├── LegalMentions.astro
+│   └── PrivacyPolicy.astro
+│
+├── data/
+│   ├── horoscopes.ts         ← Données statiques pour chaque signe
+│   └── zodiac.ts             ← Liste des 12 signes + plages de dates
+│
 ├── pages/
 │   ├── index.astro
-│   ├── about.astro
-│   └── contact.astro
-├── assets/
-│   └── images, icônes SVG, logos
-├── styles/
-│   └── global.css
+│   ├── a-propos.astro
+│   └── signe/
+│       └── [slug].astro
+│
+└── utils/
+    └── getZodiacFromDate.ts  ← Fonction pour détecter le signe selon la date
 ```
 
 ## 📡 Déploiement

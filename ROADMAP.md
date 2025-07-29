@@ -44,3 +44,4 @@
 - [ ] Intégration des réseaux sociaux (GitHub, LinkedIn...)
 - [ ] Menu burger mobile
 - [ ] Animation au scroll ou transitions douces
+- [ ] Partage social

@@ -1,23 +1,22 @@
 ---
 import { Image } from "astro:assets";
 import HeroImage from "../assets/hero.png";
+import AstroWheel from "../assets/astro-wheel.png";
+import BgStars from "../assets/bg-stars.jpg";
 import Icon from "./Icon.astro";
 ---
 
 <section class="hero">
+  <div class="hero-galaxy-bg"></div>
   <div class="hero-content">
     <div class="hero-text">
       <p class="subtitle">Bienvenue sur Astrog@mers</p>
-      <h1 class="title">Explorez l’univers entre jeux vidéo & développement</h1>
+      <h1 class="title">Les étoiles en savent plus sur toi que tes mates</h1>
       <p class="description">
-        Passionné de code & pixels : partage de projets, tutoriels, réflexions
-        et expérimentations cosmiques.
+        Chaque jour, les étoiles mettent à jour ton Elo cosmique. Style de jeu,
+        humeur, compatibilités : tout est dans les astres.
       </p>
-      <a href="#about" class="cta">Découvrir </a>
-      <div class="stats">
-        <div><strong>800+</strong> visiteurs</div>
-        <div><strong>95%</strong> taux de fun</div>
-      </div>
+      <a href="#about" class="cta">Découvrir</a>
     </div>
 
     <div class="hero-image">
@@ -31,6 +30,29 @@ import Icon from "./Icon.astro";
         loading="eager"
         decoding="async"
       />
+      <div class="astro-wheel">
+        <Image
+          src={AstroWheel}
+          alt="AstroWheel"
+          width={256}
+          height={256}
+          format="webp"
+          class="wheel-img"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <div class="hero-badges">
+        <div class="stat-block">
+          <div class="stat-number">980+</div>
+          <div class="stat-label">lectures</div>
+        </div>
+        <hr />
+        <div class="stat-block">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">fiabilité</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -42,11 +64,12 @@ import Icon from "./Icon.astro";
 
 <style>
   .hero {
+    position: relative;
     min-height: calc(100vh - var(--header-height, 80px));
+    background: linear-gradient(135deg, #1a0d30 0%, #0a0614 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gray-999);
     overflow: hidden;
   }
 
@@ -69,6 +92,7 @@ import Icon from "./Icon.astro";
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: #e3e6ee;
   }
 
   .subtitle {
@@ -79,7 +103,7 @@ import Icon from "./Icon.astro";
 
   .description {
     margin-bottom: 1.5rem;
-    color: var(--gray-300);
+    color: #a3acc8;
   }
 
   .cta {
@@ -103,6 +127,13 @@ import Icon from "./Icon.astro";
   .hero-image {
     flex: 1 1 400px;
     text-align: center;
+    position: relative; /* ← nécessaire */
+  }
+
+  .hero-text {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0; /* important */
+    animation-delay: 0.3s;
   }
 
   .hero-img {
@@ -123,6 +154,63 @@ import Icon from "./Icon.astro";
     text-decoration: none;
   }
 
+  .hero-badges {
+    position: absolute;
+    top: 80%;
+    right: -60px;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 260px;
+    background: linear-gradient(180deg, #6e3ced, #32227d);
+    border-radius: 999px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oxanium", sans-serif;
+    padding: 1.5rem 0.5rem;
+    color: white;
+    z-index: 2;
+    gap: 1.2rem;
+  }
+
+  .stat-block .stat-number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-block .stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+  }
+
+  .hero-badges hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60%;
+    margin: 0.5rem 0;
+  }
+
+  .astro-wheel {
+    position: absolute;
+    top: 40px; /* ou ajuste selon ta roue */
+    right: -130px;
+    width: 256px;
+    height: 256px;
+    z-index: 1;
+  }
+
+  .wheel-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6; /* si tu veux un effet plus subtil */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+  }
+
   @keyframes bounce {
     0%,
     100% {
@@ -130,6 +218,17 @@ import Icon from "./Icon.astro";
     }
     50% {
       transform: translateX(-50%) translateY(10px);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 

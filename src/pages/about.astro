@@ -21,7 +21,7 @@ import "../styles/global.css";
     <main>
       <section id="a-propos">
         <section>
-          <h2>À propos de moi</h2>
+          <h4>À propos de moi</h4>
           <p>
             Je m'appelle <strong>Jimmy Gaucher</strong>, un passionné du web qui
             développe ce site dans son coin, juste pour le plaisir de créer,
@@ -40,7 +40,7 @@ import "../styles/global.css";
         <hr />
 
         <section>
-          <h2>Mentions légales</h2>
+          <h4>Mentions légales</h4>
           <p>
             <strong>Éditeur du site :</strong><br />
             Nom : <strong>Jimmy Gaucher</strong><br />
@@ -62,7 +62,7 @@ import "../styles/global.css";
         <hr />
 
         <section>
-          <h2>Règles de confidentialité</h2>
+          <h4>Règles de confidentialité</h4>
           <p>
             Ce site ne collecte <strong>aucune donnée personnelle</strong>, que
             ce soit par formulaire, cookie ou tout autre moyen.
@@ -94,9 +94,15 @@ import "../styles/global.css";
 
   main {
     flex: 1;
+    display: flex;
   }
 
   #a-propos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 2rem 1rem;
+    height: 100%;
+    width: 100%;
   }
 </style>

@@ -1,0 +1,11 @@
+---
+// src/pages/signe/[slug].astro
+import { horoscopes } from "../../data/horoscopes";
+import ZodiacPageContent from "../../components/ZodiacPageContent.astro";
+
+const { slug } = Astro.params;
+const data = horoscopes.find((h) => h.slug === slug);
+if (!data) throw new Error("Signe inconnu");
+---
+
+<ZodiacPageContent {...data} />

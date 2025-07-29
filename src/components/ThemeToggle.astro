@@ -13,7 +13,7 @@ import Icon from "./Icon.astro";
       : "light";
   };
   const isDark = getThemePreference() === "dark";
-  document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
+  document.documentElement.classList.toggle("theme-dark", isDark);
 
   if (typeof localStorage !== "undefined") {
     const observer = new MutationObserver(() => {
@@ -114,7 +114,7 @@ import Icon from "./Icon.astro";
       // Toggle the theme when a user clicks the button.
       button.addEventListener("click", () => setTheme(!this.isDark()));
 
-      // Initialize button state to reflect current theme.
+      // // Initialize button state to reflect current theme.
       setTheme(this.isDark());
     }
 

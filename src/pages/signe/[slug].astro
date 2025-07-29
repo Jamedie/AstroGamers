@@ -1,11 +1,16 @@
-<!-- ---
-// src/pages/signe/[slug].astro
+---
 import { horoscopes } from "../../data/horoscopes";
 import ZodiacPageContent from "../../components/ZodiacPageContent.astro";
+
+export async function getStaticPaths() {
+  return horoscopes.map((entry) => ({
+    params: { slug: entry.slug },
+  }));
+}
 
 const { slug } = Astro.params;
 const data = horoscopes.find((h) => h.slug === slug);
 if (!data) throw new Error("Signe inconnu");
 ---
 
-<ZodiacPageContent {...data} /> -->
+<ZodiacPageContent {...data} />

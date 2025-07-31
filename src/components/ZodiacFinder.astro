@@ -1,17 +1,53 @@
 ---
 // ZodiacFinder.astro
 
+import Icon from "./Icon.astro";
+
 // Import global styles
 import "../styles/fonts.css";
 import "../styles/global.css";
 ---
 
 <script type="module" is:inline>
-  import { getZodiacSign } from "/src/utils/getZodiacFromDate.ts";
+  function getZodiacSign(month, day) {
+    const signs = [
+      { name: "capricorne", start: [12, 22], end: [1, 19] },
+      { name: "verseau", start: [1, 20], end: [2, 18] },
+      { name: "poissons", start: [2, 19], end: [3, 20] },
+      { name: "bélier", start: [3, 21], end: [4, 19] },
+      { name: "taureau", start: [4, 20], end: [5, 20] },
+      { name: "gémeaux", start: [5, 21], end: [6, 20] },
+      { name: "cancer", start: [6, 21], end: [7, 22] },
+      { name: "lion", start: [7, 23], end: [8, 22] },
+      { name: "vierge", start: [8, 23], end: [9, 22] },
+      { name: "balance", start: [9, 23], end: [10, 22] },
+      { name: "scorpion", start: [10, 23], end: [11, 21] },
+      { name: "sagittaire", start: [11, 22], end: [12, 21] },
+    ];
+
+    for (const sign of signs) {
+      const [startMonth, startDay] = sign.start;
+      const [endMonth, endDay] = sign.end;
+
+      if (
+        (month === startMonth && day >= startDay) ||
+        (month === endMonth && day <= endDay)
+      ) {
+        return sign.name;
+      }
+    }
+
+    return "capricorne";
+  }
 
   document.addEventListener("DOMContentLoaded", () => {
     const findZodiacButton = document.getElementById("findZodiac");
+    const calendarTrigger = document.getElementById("calendarTrigger");
     const birthdateInput = document.getElementById("birthdate");
+
+    calendarTrigger.addEventListener("click", () => {
+      birthdateInput.showPicker?.() || birthdateInput.focus();
+    });
 
     findZodiacButton.addEventListener("click", () => {
       const date = new Date(birthdateInput.value);
@@ -32,7 +68,18 @@ import "../styles/global.css";
     <h2>Découvre ton signe astrologique</h2>
 
     <div class="form">
-      <input type="date" id="birthdate" lang="fr" placeholder="jj/mm/aaaa" />
+      <div class="date-wrapper">
+        <input
+          type="date"
+          id="birthdate"
+          lang="fr"
+          onkeydown="return false"
+          onmousedown="event.preventDefault(); this.showPicker();"
+        />
+        <span class="icon light" id="calendarTrigger">
+          <Icon icon="calendar" />
+        </span>
+      </div>
       <button id="findZodiac" class="cta-button">Découvrir</button>
     </div>
 
@@ -78,6 +125,26 @@ import "../styles/global.css";
     margin-bottom: 1.5rem;
   }
 
+  .date-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .date-wrapper input[type="date"] {
+    padding-right: 2.5rem; /* laisse la place à l’icône */
+  }
+
+  .date-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--gray-100);
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+
   input[type="date"] {
     appearance: none;
     -webkit-appearance: none;
@@ -93,13 +160,15 @@ import "../styles/global.css";
   }
 
   input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: none;
-    color: var(--gray-100);
-    opacity: 1;
+    display: none;
   }
 
   input[type="date"]:hover {
     border-color: var(--accent-regular);
+  }
+
+  .icon {
+    cursor: pointer;
   }
 
   .result {

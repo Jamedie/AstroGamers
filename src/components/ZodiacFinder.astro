@@ -8,61 +8,11 @@ import "../styles/fonts.css";
 import "../styles/global.css";
 ---
 
-<script type="module" is:inline>
-  function getZodiacSign(month, day) {
-    const signs = [
-      { name: "capricorne", start: [12, 22], end: [1, 19] },
-      { name: "verseau", start: [1, 20], end: [2, 18] },
-      { name: "poissons", start: [2, 19], end: [3, 20] },
-      { name: "bélier", start: [3, 21], end: [4, 19] },
-      { name: "taureau", start: [4, 20], end: [5, 20] },
-      { name: "gémeaux", start: [5, 21], end: [6, 20] },
-      { name: "cancer", start: [6, 21], end: [7, 22] },
-      { name: "lion", start: [7, 23], end: [8, 22] },
-      { name: "vierge", start: [8, 23], end: [9, 22] },
-      { name: "balance", start: [9, 23], end: [10, 22] },
-      { name: "scorpion", start: [10, 23], end: [11, 21] },
-      { name: "sagittaire", start: [11, 22], end: [12, 21] },
-    ];
+<script src="/scripts/zodiacFinder.js" type="module"></script>
 
-    for (const sign of signs) {
-      const [startMonth, startDay] = sign.start;
-      const [endMonth, endDay] = sign.end;
+<script src="/scripts/zodiacFinder.js" type="module"></script>
 
-      if (
-        (month === startMonth && day >= startDay) ||
-        (month === endMonth && day <= endDay)
-      ) {
-        return sign.name;
-      }
-    }
-
-    return "capricorne";
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const findZodiacButton = document.getElementById("findZodiac");
-    const calendarTrigger = document.getElementById("calendarTrigger");
-    const birthdateInput = document.getElementById("birthdate");
-
-    calendarTrigger.addEventListener("click", () => {
-      birthdateInput.showPicker?.() || birthdateInput.focus();
-    });
-
-    findZodiacButton.addEventListener("click", () => {
-      const date = new Date(birthdateInput.value);
-      if (!isNaN(date)) {
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
-        const sign = getZodiacSign(month, day);
-        document.getElementById("result").textContent =
-          `Ton signe est : ${sign}`;
-      }
-    });
-  });
-</script>
-
-<section class="zodiac-container">
+<section class="zodiac-finder" id="zodiac-finder">
   <div class="zodiac-box">
     <p class="label">TON ZODIAC</p>
     <h2>Découvre ton signe astrologique</h2>
@@ -83,12 +33,12 @@ import "../styles/global.css";
       <button id="findZodiac" class="cta-button">Découvrir</button>
     </div>
 
-    <p id="result" class="result"></p>
+    <div class="zodiac-result" id="result"></div>
   </div>
 </section>
 
 <style>
-  .zodiac-container {
+  .zodiac-finder {
     padding: 4rem 2rem;
     border-radius: 3rem 3rem 0 0;
     color: #fff;
@@ -111,7 +61,7 @@ import "../styles/global.css";
     margin-bottom: 0.5rem;
   }
 
-  h1 {
+  h2 {
     font-family: "Orbitron", sans-serif;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -131,7 +81,7 @@ import "../styles/global.css";
   }
 
   .date-wrapper input[type="date"] {
-    padding-right: 2.5rem; /* laisse la place à l’icône */
+    padding-right: 2.5rem;
   }
 
   .date-wrapper .icon {
@@ -140,14 +90,13 @@ import "../styles/global.css";
     right: 1rem;
     transform: translateY(-50%);
     pointer-events: none;
-    color: var(--gray-100);
     font-size: 1.1rem;
     opacity: 0.8;
+    color: var(--gray-100);
   }
 
   input[type="date"] {
     appearance: none;
-    -webkit-appearance: none;
     background-color: var(--gray-700);
     border: 1px solid var(--gray-600);
     border-radius: 12px;
@@ -155,7 +104,6 @@ import "../styles/global.css";
     color: var(--gray-100);
     font-family: "Oxanium", sans-serif;
     font-size: 1rem;
-    position: relative;
     cursor: pointer;
   }
 
@@ -167,14 +115,94 @@ import "../styles/global.css";
     border-color: var(--accent-regular);
   }
 
-  .icon {
-    cursor: pointer;
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.75rem;
+    background: var(--accent-regular);
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    box-shadow: 0 0 12px rgba(198, 97, 246, 0.25);
+    transition: all 0.3s ease;
   }
 
-  .result {
-    font-size: 1.1rem;
+  .cta-button:hover {
+    background: var(--accent-light);
+    box-shadow: 0 0 20px rgba(198, 97, 246, 0.5);
+  }
+
+  /* Zodiac Result */
+  .zodiac-result {
+    margin-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .zodiac-result-card {
+    background: linear-gradient(145deg, #1a1a2e, #12121c);
+    border: 1px solid rgba(198, 97, 246, 0.2);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    box-shadow: 0 0 20px rgba(198, 97, 246, 0.08);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.4s ease;
+  }
+
+  .zodiac-icon-result {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 8px rgba(198, 97, 246, 0.3));
+  }
+
+  .zodiac-result-heading {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .zodiac-result-name {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: var(--accent-regular);
-    font-weight: 500;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(198, 97, 246, 0.3);
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes cosmicPop {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: cosmicPop 0.5s ease-out both;
   }
 </style>

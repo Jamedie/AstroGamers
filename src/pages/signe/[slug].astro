@@ -1,6 +1,12 @@
 ---
 import { horoscopes } from "../../data/horoscopes";
 import ZodiacPageContent from "../../components/ZodiacPageContent.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+// Import global styles
+import "../../styles/fonts.css";
+import "../../styles/global.css";
 
 export async function getStaticPaths() {
   return horoscopes.map((entry) => ({
@@ -13,4 +19,78 @@ const data = horoscopes.find((h) => h.slug === slug);
 if (!data) throw new Error("Signe inconnu");
 ---
 
-<ZodiacPageContent {...data} />
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astrog@mers - {data.signe}</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <ZodiacPageContent {...data} />
+    </main>
+
+    <div class="particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .particles span {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    animation: float 10s linear infinite;
+  }
+
+  .particles span:nth-child(1) {
+    left: 20%;
+    animation-delay: 0s;
+  }
+  .particles span:nth-child(2) {
+    left: 40%;
+    animation-delay: 2s;
+  }
+  .particles span:nth-child(3) {
+    left: 60%;
+    animation-delay: 4s;
+  }
+  .particles span:nth-child(4) {
+    left: 80%;
+    animation-delay: 6s;
+  }
+  .particles span:nth-child(5) {
+    left: 90%;
+    animation-delay: 8s;
+  }
+
+  @keyframes float {
+    0% {
+      top: 110%;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      top: -10%;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+</style>

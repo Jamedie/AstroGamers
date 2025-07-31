@@ -4,7 +4,7 @@ import { zodiacSigns } from "../data/zodiac";
 import ZodiacCard from "./ZodiacCard.astro";
 ---
 
-<section class="zodiac-grid">
+<section class="zodiac-grid" id="zodiac-grid">
   <p>Signes du zodiaque</p>
 
   <h2 class="label">Découvre ton signe astrologique</h2>
@@ -14,7 +14,7 @@ import ZodiacCard from "./ZodiacCard.astro";
       zodiacSigns.map((sign) => (
         <ZodiacCard
           name={sign.name}
-          slug={sign.slug}
+          slug={sign.slug.toLocaleLowerCase()}
           image={sign.image}
           dateRange={sign.dateRange}
         />
@@ -31,7 +31,7 @@ import ZodiacCard from "./ZodiacCard.astro";
     text-align: center;
     background: var(--gray-999);
     border-radius: 3rem 3rem 0 0;
-    color: #fff;
+    color: var(--gray-100);
     font-family: "Oxanium", sans-serif;
   }
 

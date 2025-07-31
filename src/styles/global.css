@@ -277,7 +277,7 @@ h5 {
   color: var(--accent-regular);
   background: var(--accent-text-over);
   padding: 0.4rem 1rem;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   margin-top: auto;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }

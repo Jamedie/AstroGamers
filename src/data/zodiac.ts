@@ -8,24 +8,6 @@ export interface ZodiacSign {
 
 export const zodiacSigns: ZodiacSign[] = [
   {
-    name: "Lion",
-    slug: "lion",
-    image: "../assets/zodiac/lion.webp",
-    dateRange: "23 juillet - 22 août",
-  },
-  {
-    name: "Scorpion",
-    slug: "scorpion",
-    image: "/assets/zodiac/scorpion.webp",
-    dateRange: "23 octobre - 21 novembre",
-  },
-  {
-    name: "Verseau",
-    slug: "verseau",
-    image: "/assets/zodiac/verseau.webp",
-    dateRange: "20 janvier - 18 février",
-  },
-  {
     name: "Bélier",
     slug: "belier",
     image: "/assets/zodiac/belier.webp",
@@ -50,6 +32,12 @@ export const zodiacSigns: ZodiacSign[] = [
     dateRange: "21 juin - 22 juillet",
   },
   {
+    name: "Lion",
+    slug: "lion",
+    image: "../assets/zodiac/lion.webp",
+    dateRange: "23 juillet - 22 août",
+  },
+  {
     name: "Vierge",
     slug: "vierge",
     image: "/assets/zodiac/vierge.webp",
@@ -62,6 +50,12 @@ export const zodiacSigns: ZodiacSign[] = [
     dateRange: "23 septembre - 22 octobre",
   },
   {
+    name: "Scorpion",
+    slug: "scorpion",
+    image: "/assets/zodiac/scorpion.webp",
+    dateRange: "23 octobre - 21 novembre",
+  },
+  {
     name: "Sagittaire",
     slug: "sagittaire",
     image: "/assets/zodiac/sagittaire.webp",
@@ -72,6 +66,12 @@ export const zodiacSigns: ZodiacSign[] = [
     slug: "capricorne",
     image: "/assets/zodiac/capricorne.webp",
     dateRange: "22 décembre - 19 janvier",
+  },
+  {
+    name: "Verseau",
+    slug: "verseau",
+    image: "/assets/zodiac/verseau.webp",
+    dateRange: "20 janvier - 18 février",
   },
   {
     name: "Poissons",

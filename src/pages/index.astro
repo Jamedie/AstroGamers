@@ -1,6 +1,5 @@
 ---
 // Page section component
-import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
 import AboutPreview from "../components/AboutPreview.astro";
 import ZodiacCardsGrid from "../components/ZodiacCardsGrid.astro";
@@ -10,9 +9,32 @@ import ZodiacFinder from "../components/ZodiacFinder.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <Hero />
-  <AboutPreview />
-  <ZodiacCardsGrid />
-  <ZodiacFinder />
-</BaseLayout>
+<script is:inline>
+  if (sessionStorage.getItem("scrollToZodiac")) {
+    sessionStorage.removeItem("scrollToZodiac");
+
+    // scroll dès que possible sans attendre paint complet
+    window.addEventListener("DOMContentLoaded", () => {
+      const target = document.querySelector("#zodiac-grid");
+      if (target) {
+        target.scrollIntoView({ behavior: "instant", block: "start" });
+      }
+    });
+  }
+</script>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A propos - Astrog@mers</title>
+  </head>
+
+  <body>
+    <BaseLayout>
+      <Hero />
+      <AboutPreview />
+      <ZodiacCardsGrid />
+      <ZodiacFinder />
+    </BaseLayout>
+  </body>
+</html>

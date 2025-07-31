@@ -15,7 +15,7 @@ import Icon from "./Icon.astro";
         Chaque jour, les étoiles mettent à jour ton Elo cosmique. Style de jeu,
         humeur, compatibilités : tout est dans les astres.
       </p>
-      <a href="#about" class="cta-button">Découvrir</a>
+      <a href="#zodiac-grid" class="cta-button">Découvrir</a>
     </div>
 
     <div class="hero-image">
@@ -43,13 +43,13 @@ import Icon from "./Icon.astro";
       </div>
       <div class="hero-badges">
         <div class="stat-block">
-          <div class="stat-number">980+</div>
-          <div class="stat-label">lectures</div>
+          <div class="stat-number">95%</div>
+          <div class="stat-label">fiabilité</div>
         </div>
         <hr />
         <div class="stat-block">
-          <div class="stat-number">95%</div>
-          <div class="stat-label">fiabilité</div>
+          <div class="stat-number">980+</div>
+          <div class="stat-label">lectures</div>
         </div>
       </div>
     </div>
@@ -110,17 +110,6 @@ import Icon from "./Icon.astro";
     color: #a3acc8;
   }
 
-  /* .cta {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--accent-regular);
-    color: var(--accent-text-over);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-  } */
-
   .stats {
     display: flex;
     gap: 2rem;
@@ -165,7 +154,12 @@ import Icon from "./Icon.astro";
     transform: translateY(-50%);
     width: 120px;
     height: 260px;
-    background: linear-gradient(180deg, #6e3ced, #32227d);
+    background: linear-gradient(
+      180deg,
+      var(--accent-light) 0%,
+      var(--accent-regular) 60%,
+      var(--accent-dark) 100%
+    );
     border-radius: 999px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -177,6 +171,19 @@ import Icon from "./Icon.astro";
     color: white;
     z-index: 2;
     gap: 1.2rem;
+  }
+
+  .hero-badges::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 50% 20%,
+      var(--accent-overlay),
+      transparent 60%
+    );
+    border-radius: inherit;
+    z-index: -1;
   }
 
   .stat-block .stat-number {

@@ -38,15 +38,19 @@ L’horoscope doit être valable pour un seul signe astrologique et couvrir les 
 
 ### Format de sortie souhaité :
 
-Signe : [Nom du signe]
+slug : [slug du signe]
 
-Élo Cosmique : [Nombre sur 3000] – [Bref commentaire]
+signe : [Nom du signe]
 
-Prédiction : [Texte de 3 à 4 lignes, style immersif et drôle]
+eloCosmique : [Nombre sur 3000] – [Bref commentaire]
 
-Compatibilité astrale : [1 à 3 signes avec courte explication stylée]
+prediction : [Texte de 3 à 4 lignes, style immersif et drôle]
 
-Recommandation astrale : [Conseil stylé, subtil et réaliste]
+compatibility : [1 à 3 signes avec courte explication stylée]
+
+recommendation : [Conseil stylé, subtil et réaliste]
+
+en format Json
 
 Important :
 - Ne jamais utiliser d’émojis

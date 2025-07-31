@@ -1,167 +1,144 @@
 ---
 // Page section component
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+// Layout import — provides basic page elements: <head>, <nav>,
+import ScrollToTop from "../components/ScrollToTop.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Import global styles
 import "../styles/fonts.css";
 import "../styles/global.css";
 ---
 
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>A propos - Astrog@mers</title>
-  </head>
-
-  <body>
-    <Header />
-
-    <main>
-      <section id="a-propos">
-        <section>
-          <h4>À propos de moi</h4>
-          <p>
-            Je m'appelle <strong>Jimmy Gaucher</strong>, un passionné du web qui
-            développe ce site dans son coin, juste pour le plaisir de créer,
-            partager et expérimenter.
-          </p>
-          <p>
-            Ce projet est entièrement personnel, sans but commercial. Il reflète
-            mes idées, mes tests, mes envies… parfois mes folies numériques.
-          </p>
-          <p>
-            Ici, pas de collecte de données, pas de cookies, pas de traçage.
-            Juste un site simple, propre et libre.
-          </p>
-        </section>
-
-        <hr />
-
-        <section>
-          <h4>Mentions légales</h4>
-          <p>
-            <strong>Éditeur du site :</strong><br />
-            Nom : <strong>Jimmy Gaucher</strong><br />
-            Statut : Particulier<br />
-            Contact : <a href="mailto:contact@jimmy.gaucher@hotmail.com"
-              >contact@jimmy.gaucher@hotmail.com</a
-            >
-          </p>
-
-          <p>
-            <strong>Hébergement :</strong>
-            Ce site est hébergé par <strong>Netlify</strong>.<br />
-            Site web : <a href="https://www.netlify.com" target="_blank"
-              >https://www.netlify.com</a
-            >
-          </p>
-        </section>
-
-        <hr />
-
-        <section>
-          <h4>Règles de confidentialité</h4>
-          <p>
-            Ce site ne collecte <strong>aucune donnée personnelle</strong>, que
-            ce soit par formulaire, cookie ou tout autre moyen.
-          </p>
-          <p>
-            Vous pouvez naviguer librement sans aucune surveillance ni
-            enregistrement d'informations.
-          </p>
-        </section>
-
-        <hr />
-
-        <section>
-          <h4>Credits</h4>
-          <p>
-            Toute aventure cosmique commence par une étincelle. Celle d’<strong
-              >Astrog@amers</strong
-            > est née quelque part entre une intuition soudaine, un fond de café
-            froid, et une envie de faire parler les étoiles autrement.
-          </p>
-
-          <ul>
-            <li>
-              <strong>Jimmy Gaucher</strong> – Concepteur du site, architecte du
-              destin numérique d’Astrog@amers. Il a transformé une idée flottante
-              dans l’éther en plateforme concrète, intuitive et (espérons-le) astralement
-              alignée.
-            </li>
-
-            <li>
-              <strong>Nathan Muler</strong> – Il a contribué à planter les premières
-              graines de ce projet avec des idées, des discussions, et un regard
-              bienveillant qui a su orienter l’ensemble.
-            </li>
-
-            <li>
-              <strong>ChatGPT</strong> – Intelligence artificielle invoquée pour
-              générer des horoscopes aux influences planétaires douteuses mais divertissantes,
-              ainsi que des visuels touchés par une certaine... magie algorithmique.
-            </li>
-
-            <li>
-              <strong>Melody Tassou</strong> – Graphiste inspirée, à l’origine du
-              logo. Elle a su capter l’essence d’un projet qui parle aux étoiles,
-              pour la condenser en une image simple, forte et symbolique.
-            </li>
-
-            <li>
-              <strong>Kohesif Studio</strong> – Leur template, déniché sur
-              <a
-                href="https://themeforest.net/item/moonlight-horoscope-astrology-elementor-template-kit/54958041"
-                target="_blank">Envato</a
-              >, a servi de boussole esthétique. Merci à eux pour cette
-              constellation de bonnes idées graphiques.
-            </li>
-          </ul>
-          <br />
-          <p>
-            Merci à tous ceux, visibles ou non, qui ont contribué de près ou de
-            loin à faire exister ce petit coin d’univers numérique.
-          </p>
-        </section>
+<BaseLayout title="À propos - Astrog@mers">
+  <section id="a-propos">
+    <div class="container">
+      <section>
+        <h4>À propos de moi</h4>
+        <p>
+          Je m'appelle <strong>Jimmy Gaucher</strong>, un passionné du web qui
+          développe ce site dans son coin, juste pour le plaisir de créer,
+          partager et expérimenter.
+        </p>
+        <p>
+          Ce projet est entièrement personnel, sans but commercial. Il reflète
+          mes idées, mes tests, mes envies… parfois mes folies numériques.
+        </p>
+        <p>
+          Ici, pas de collecte de données, pas de cookies, pas de traçage. Juste
+          un site simple, propre et libre.
+        </p>
       </section>
-    </main>
 
-    <Footer />
-  </body>
-</html>
+      <hr />
+
+      <section>
+        <h4>Mentions légales</h4>
+        <p>
+          <strong>Éditeur du site :</strong><br />
+          Nom : <strong>Jimmy Gaucher</strong><br />
+          Statut : Particulier<br />
+          Contact : <a href="mailto:contact@jimmy.gaucher@hotmail.com"
+            >contact@jimmy.gaucher@hotmail.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Hébergement :</strong>
+          Ce site est hébergé par <strong>Netlify</strong>.<br />
+          Site web : <a href="https://www.netlify.com" target="_blank"
+            >https://www.netlify.com</a
+          >
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h4>Règles de confidentialité</h4>
+        <p>
+          Ce site ne collecte <strong>aucune donnée personnelle</strong>, que ce
+          soit par formulaire, cookie ou tout autre moyen.
+        </p>
+        <p>
+          Vous pouvez naviguer librement sans aucune surveillance ni
+          enregistrement d'informations.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h4>Credits</h4>
+        <p>
+          Toute aventure cosmique commence par une étincelle. Celle d’<strong
+            >Astrog@amers</strong
+          > est née quelque part entre une intuition soudaine, un fond de café froid,
+          et une envie de faire parler les étoiles autrement.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Jimmy Gaucher</strong> – Concepteur du site, architecte du destin
+            numérique d’Astrog@amers. Il a transformé une idée flottante dans l’éther
+            en plateforme concrète, intuitive et (espérons-le) astralement alignée.
+          </li>
+
+          <li>
+            <strong>Nathan Müller</strong> – Il a contribué à planter les premières
+            graines de ce projet avec des idées, des discussions, et un regard bienveillant
+            qui a su orienter l’ensemble.
+          </li>
+
+          <li>
+            <strong>ChatGPT</strong> – Intelligence artificielle invoquée pour générer
+            des horoscopes aux influences planétaires douteuses mais divertissantes,
+            ainsi que des visuels touchés par une certaine... magie algorithmique.
+          </li>
+
+          <li>
+            <strong>Melody Tassou</strong> – Graphiste inspirée, à l’origine du logo.
+            Elle a su capter l’essence d’un projet qui parle aux étoiles, pour la
+            condenser en une image simple, forte et symbolique.
+          </li>
+
+          <li>
+            <strong>Kohesif Studio</strong> – Leur template, déniché sur
+            <a
+              href="https://themeforest.net/item/moonlight-horoscope-astrology-elementor-template-kit/54958041"
+              target="_blank">Envato</a
+            >, a servi de boussole esthétique. Merci à eux pour cette
+            constellation de bonnes idées graphiques.
+          </li>
+        </ul>
+        <br />
+        <p>
+          Merci à tous ceux, visibles ou non, qui ont contribué de près ou de
+          loin à faire exister ce petit coin d’univers numérique.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h4>Mes autres sites</h4>
+      </section>
+    </div>
+    <ScrollToTop />
+  </section>
+</BaseLayout>
 
 <style>
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    padding: 2rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
   #a-propos {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
-    height: 100%;
-    width: 100%;
     gap: 2rem;
   }
 </style>

@@ -4,6 +4,7 @@ import Icon from "./Icon.astro";
 
 <script is:inline>
   const handleScroll = () => {
+    console.log("scrolling");
     const scrollBtn = document.getElementById("scrollTop");
     if (!scrollBtn) return;
     if (window.scrollY > 300) {
@@ -27,8 +28,8 @@ import Icon from "./Icon.astro";
 </script>
 
 <button id="scrollTop" class="scroll-top" aria-label="Retour en haut">
-  <span class="icon light"><Icon icon="arrow-up" /></span></button
->
+  <span class="icon light"><Icon icon="arrow-up" /></span>
+</button>
 
 <style>
   .scroll-top {

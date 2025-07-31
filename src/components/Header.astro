@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../assets/logo.webp";
+import Logo from "../assets/logo.svg";
 
 import ThemeToggle from "./ThemeToggle.astro";
 ---
@@ -55,6 +55,8 @@ import ThemeToggle from "./ThemeToggle.astro";
   .logo {
     width: 100%;
     max-height: var(--header-height);
+    padding: 1rem;
+    color: var(--accent-regular);
   }
 
   .site-title {
@@ -103,6 +105,8 @@ import ThemeToggle from "./ThemeToggle.astro";
     max-width: 83rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
+    padding: 12px;
+    height: 100%;
   }
 
   .left-nav {

@@ -62,3 +62,23 @@ src/
 
 Le site est déployé en continu via Netlify :
 🔗 [https://astrogamers.netlify.app](https://astrogamers.netlify.app)
+
+## Credits
+
+## Crédits
+
+## Crédits
+
+Toute aventure cosmique commence par une étincelle. Celle d’Astrog@amers est née quelque part entre une intuition soudaine, un fond de café froid, et une envie de faire parler les étoiles autrement.
+
+- **Jimmy Gaucher** – Concepteur du site, architecte du destin numérique d’Astrog@amers. Il a transformé une idée flottante dans l’éther en plateforme concrète, intuitive et (espérons-le) astralement alignée.
+
+- **Nathan Muler** – Co-créateur officieux mais essentiel. Il a contribué à planter les premières graines de ce projet avec des idées, des discussions, et un regard bienveillant qui a su orienter l’ensemble.
+
+- **ChatGPT** – Intelligence artificielle invoquée pour générer des horoscopes aux influences planétaires douteuses mais divertissantes, ainsi que des visuels touchés par une certaine... magie algorithmique.
+
+- **Melody Tassou** – Graphiste inspirée, à l’origine du logo. Elle a su capter l’essence d’un projet qui parle aux étoiles, pour la condenser en une image simple, forte et symbolique.
+
+- **Kohesif Studio** – Leur template, déniché sur [Envato](https://themeforest.net/item/moonlight-horoscope-astrology-elementor-template-kit/54958041), a servi de boussole esthétique. Merci à eux pour cette constellation de bonnes idées graphiques.
+
+Merci à tous ceux, visibles ou non, qui ont contribué de près ou de loin à faire exister ce petit coin d’univers numérique.

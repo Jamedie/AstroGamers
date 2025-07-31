@@ -201,6 +201,14 @@ h5 {
   font-size: var(--text-lg); /* 1.25rem / 20px */
 }
 
+.subtitle {
+  font-weight: 600;
+  color: var(--accent-regular);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
 /* Utilities */
 
 .sr-only {

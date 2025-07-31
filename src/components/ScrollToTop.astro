@@ -1,0 +1,66 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<script is:inline>
+  const handleScroll = () => {
+    const scrollBtn = document.getElementById("scrollTop");
+    if (!scrollBtn) return;
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scrollTop");
+    if (scrollBtn) {
+      scrollBtn.addEventListener("click", scrollToTop);
+    }
+  });
+</script>
+
+<button id="scrollTop" class="scroll-top" aria-label="Retour en haut">
+  <span class="icon light"><Icon icon="arrow-up" /></span></button
+>
+
+<style>
+  .scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--accent-regular);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(198, 97, 246, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .scroll-top:hover {
+    background: var(--accent-light);
+    box-shadow: 0 0 20px rgba(198, 97, 246, 0.5);
+  }
+</style>

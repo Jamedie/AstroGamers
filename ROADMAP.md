@@ -53,15 +53,15 @@
 
 ## ✅ Étape 7 - Grille des 12 signes :
 
-- [ ] Présentation sous forme de cartes cliquables
-- [ ] Chaque carte mène à une page dédiée avec l’horoscope du signe choisi
+- [x] Présentation sous forme de cartes cliquables
+- [x] Chaque carte mène à une page dédiée avec l’horoscope du signe choisi
 
 ---
 
 ## 📌 Bonus idées (pour plus tard)
 
 - [ ] Page 404 personnalisée
-- [ ] Intégration des réseaux sociaux (GitHub, LinkedIn...)
+- [x] Intégration des réseaux sociaux (GitHub, LinkedIn...)
 - [ ] Menu burger mobile
-- [ ] Animation au scroll ou transitions douces
+- [x] Animation au scroll ou transitions douces
 - [ ] Partage social

@@ -2,140 +2,121 @@ export const horoscopes = [
   {
     slug: "belier",
     signe: "Bélier",
-    eloCosmique: "980 – L’univers a cliqué sur « hard mode » sans prévenir",
+    eloCosmique: 1120,
     prediction:
-      "Tu pars comme une fusée, prêt à carry l’univers, mais tu finis souvent en 1v5 pendant que tes mates lootent ou débattent d’un ping douteux. Ton aim est là, ta volonté aussi, mais aujourd’hui, les timings, le matchmaking et les rotations sont tous un peu... contre toi.",
+      "Tu fonces tête baissée, comme ce tank qui engage sans backup et s’étonne de finir en slow-motion. Aujourd’hui, la précipitation t’attire plus d’écrans noirs que de victoires. Respire avant de cliquer.",
     compatibility:
-      "Les Lions comprendront ton besoin d’action, les Capricornes t’aideront à doser l’intensité.",
+      "Les Sagittaires partagent ton feu, mais savent parfois quand lever le pied.",
     recommendation:
-      "Le premier move n’est pas toujours le bon si personne ne suit derrière.",
+      "La patience aussi a un cooldown — à toi de l’utiliser à bon escient.",
   },
   {
     slug: "taureau",
     signe: "Taureau",
-    eloCosmique:
-      "2010 – Solide mais pas invincible, prudence et constance seront tes alliées",
+    eloCosmique: 980,
     prediction:
-      "Tu tiens la ligne, tu tankes les erreurs des autres, mais à force d’absorber les dégâts, tu risques de confondre résilience et obstination. Un mate te ping dix fois pour une strat bancale ? Reste calme. Même les plus stables peuvent flancher quand l’équipe joue comme un poulet sans tête.",
+      "Quand le stuff ne sort pas et que le support décide d’explorer la jungle… seul. Tu pourrais passer plus de temps à ping qu’à jouer. Peut-être que ton canapé mérite ton attention aujourd’hui.",
     compatibility:
-      "Les Cancers sauront te soutenir sans t’envahir, les Vierges partagent ton sens du timing discret.",
-    recommendation:
-      "Reste ferme, mais pas figé. Le repli n’est pas toujours une faiblesse.",
+      "Les Vierges peuvent t’apporter un peu d’ordre dans ce chaos numérique.",
+    recommendation: "La stabilité se cultive aussi hors des ranked.",
   },
   {
     slug: "gemeaux",
     signe: "Gémeaux",
-    eloCosmique:
-      "1420 – Journée en mode split-perso, entre fulgurances et pertes de focus",
+    eloCosmique: 1320,
     prediction:
-      "Un round tu clutch comme un dieu, le suivant tu pars looter pendant un teamfight décisif. Tes calls sont brillants, mais changent toutes les 30 secondes. L’ennemi ne sait pas ce que tu vas faire… et toi non plus. Fun pour les highlights, moins pour le winrate.",
-    compatibility:
-      "Les Balances t’aident à structurer ton chaos, les Verseaux surfent avec toi sur l’imprévisible.",
+      "Tu oscilles entre ultra-carry et feed intersidéral. C’est une journée en 50/50 où ton meilleur allié sera le mute-all. Et ton pire ennemi ? Ta propre envie de clutch chaque round.",
+    compatibility: "Les Balances t’aideront à rester sur une ligne médiane.",
     recommendation:
-      "Canalise ton énergie avant qu’elle ne se disperse dans les respawns.",
+      "Ne joue pas deux rôles à la fois, choisis ton style du jour.",
   },
   {
     slug: "cancer",
     signe: "Cancer",
-    eloCosmique:
-      "1420 – Les énergies sont flottantes, comme ton ping vers 22h.",
+    eloCosmique: 2140,
     prediction:
-      "Aujourd’hui, tu risques de croiser le cousin caché de l’aléatoire : un coéquipier qui dive sans prévenir, un loot violet qui disparaît mystérieusement, et un matchmaking qui te fait douter de ta place dans l’univers. Respire. Ce n’est pas contre toi, c’est juste... le karma digital.",
+      "Ton instinct te guide bien : esquives propres, picks malins, un teammate inattendu pourrait même te back-up au bon moment. Profite, c’est rare. Ne sois pas trop gentil non plus, le chaos veille toujours.",
     compatibility:
-      "Les Poissons peuvent t’apporter un peu de calme mental, et les Balances sauront équilibrer les vibes de la game.",
-    recommendation:
-      "Ne sous-estime pas la puissance d’un café bien dosé et d’un lobby bien choisi.",
+      "Les Poissons renforcent ton intuition, les Taureaux ton ancrage.",
+    recommendation: "Une bonne défense peut faire basculer une game entière.",
   },
   {
     slug: "lion",
     signe: "Lion",
-    eloCosmique:
-      "2430 – Une belle énergie plane, mais gare à l’excès de confiance",
+    eloCosmique: 1760,
     prediction:
-      "Tu brilles, tu leads, tu engages… mais parfois trop fort, trop tôt, trop seul. L’équipe te suit ? Peut-être. Peut-être pas. Les timings sont un peu bancals, et même les ultis les plus flamboyants peuvent finir en highlight pour l’ennemi si tu ne regardes pas la mini-map.",
+      "Tu veux briller mais le matchmaking a d'autres plans : soloQ te réserve un florilège de champions troll et de last picks tragiques. Accepte que tout le monde n’a pas ton sens du spectacle.",
     compatibility:
-      "Les Sagittaires partagent ton feu et ton allant, les Balances peuvent te ramener un soupçon de lucidité.",
-    recommendation:
-      "L’éclat du leader est plus fort quand il sait quand reculer.",
+      "Les Gémeaux t’aident à relativiser, les Capricornes à tenir le front.",
+    recommendation: "Le silence bien placé vaut parfois mieux qu’un Ace.",
   },
   {
     slug: "vierge",
     signe: "Vierge",
-    eloCosmique: "1880 – Rien de dramatique, mais ça manque de fluidité",
+    eloCosmique: 2580,
     prediction:
-      "Tu vois les erreurs avant qu’elles arrivent, mais l’équipe ne t’écoute pas et spamme des strats dignes d’un tuto 2017. Ton tracking est précis, ton farm carré, mais entre les lags serveurs et les teammates lunaires, tu risques de grind dans le vide aujourd’hui.",
+      "Aujourd’hui, tout est presque aligné : les rotations sont fluides, les calls clairs, même le drop loot semble t’écouter. Tant que tu ne te perds pas dans les micro-détails, tu pourrais vraiment carry sans t’enflammer.",
     compatibility:
-      "Les Capricornes partagent ton goût du contrôle, les Taureaux t’apportent de la stabilité quand tout part en freestyle.",
-    recommendation:
-      "Même une exécution parfaite ne sauve pas une mauvaise lecture de la situation.",
+      "Les Capricornes renforcent ta rigueur, les Cancers ton flair.",
+    recommendation: "Ne corrige pas tout, joue aussi avec l’imprévu.",
   },
   {
     slug: "balance",
     signe: "Balance",
-    eloCosmique:
-      "1580 – Journée en mode yoyo cosmique, instable mais pas irrécupérable",
+    eloCosmique: 1010,
     prediction:
-      "Entre un heal inexistant, une frontline qui fait du tourisme et un loot digne d’un fond de tiroir, tu risques de douter de ton karma. Tu veux équilibrer les forces, mais l’univers préfère jouer random aujourd’hui. L’ennemi semble toujours une frame plus rapide, et tes calls résonnent dans le vide spatial du vocal.",
-    compatibility:
-      "Les Verseaux peuvent t’aider à relativiser, les Vierges à remettre un peu d’ordre dans le chaos ambiant.",
-    recommendation:
-      "Quand tout flotte autour de toi, ancre-toi dans les détails que tu maîtrises.",
+      "Tu hésites sur ton rôle, ta strat, ton loadout… et le chrono ne t’attend pas. Tu risques de passer plus de temps en lobby qu’en action. Décide, même mal, ce sera déjà un pas de plus que tes mates.",
+    compatibility: "Les Verseaux te stimulent, les Lions te challengent.",
+    recommendation: "L’indécision peut coûter plus cher qu’un mauvais call.",
   },
   {
     slug: "scorpion",
     signe: "Scorpion",
-    eloCosmique: "1180 – Énergie d’écran bleu, chance proche du crash serveur",
+    eloCosmique: 2370,
     prediction:
-      "Les astres t’ont mis en file d’attente prioritaire… vers le malheur. Tes mates ? Invisibles. Ton aim ? Inexistant. Ton PC ? Il surchauffe rien qu’à l’idée de lancer une game. Même ton familier cosmique te regarde avec pitié. Conseil des planètes : alt+F4 sur la journée.",
+      "Tu sens les pièges avant qu’ils se referment, tu lis les moves ennemis comme un vieux patch note. Méfie-toi juste de ton besoin de domination : la game se gagne aussi en duo, pas en solo clutch permanent.",
     compatibility:
-      "Joue pas. Mais si t’insistes, rapproche-toi d’un Scorpion (il saura tanker ta frustration) ou d’un Cancer (il pleurera avec toi dans le lobby).",
-    recommendation:
-      "Éteins tout. Bois de l’eau. Médite. Regarde un tuto. Reviens demain avec un reset astral.",
+      "Les Poissons captent tes signaux, les Béliers te réveillent.",
+    recommendation: "Ne transforme pas chaque escarmouche en guerre totale.",
   },
   {
     slug: "sagittaire",
     signe: "Sagittaire",
-    eloCosmique:
-      "2310 – Belle dynamique, à condition de ne pas partir trop vite en orbite",
+    eloCosmique: 1210,
     prediction:
-      "Tu joues vite, tu penses large, tu engages sans attendre... parfois un peu trop. L’intention est bonne, mais ton équipe a besoin d’une notice pour suivre ton tempo. Attention aux flanks qui se transforment en longues balades solitaires sans impact.",
-    compatibility:
-      "Les Béliers partagent ton allant, les Lions comprennent ton besoin de foncer, mais les Vierges peuvent tempérer l’enthousiasme quand il devient brouillon.",
+      "Tu veux tout tenter, tout explorer, tout casser — mais le serveur ne suit pas toujours ton enthousiasme. Pings instables, teammates lunaires… Un jour à tester des strats solo en normal.",
+    compatibility: "Les Lions vibrent à ton rythme, les Balances t’ancrent.",
     recommendation:
-      "L’initiative c’est bien, l’écoute c’est mieux : la win est souvent au croisement des deux.",
+      "L’envie de win ne suffit pas si la team est à contre-vent.",
   },
   {
     slug: "capricorne",
     signe: "Capricorne",
-    eloCosmique:
-      "1180 – Karma en bronze IV, file d’attente spirituelle bloquée",
+    eloCosmique: 2710,
     prediction:
-      "Aujourd’hui, ton matchmaking sent la Lune en PLS. Ton jungler spawn dans le mauvais jeu, ton healer croit au pouvoir de la pensée positive, et le loot te regarde de haut. Même ton café critique à 2 de dégâts. Respire. Alt+Tab mental recommandé.",
+      "La win n’est pas garantie, mais ton sérieux va faire la différence. Tu leads sans forcer, anticipes comme un main strat, et même le random pick du mid semble te suivre. Rare alchimie, savoure-la.",
     compatibility:
-      "Les Vierges te stabilisent, les Scorpions comprennent ton envie de muter tout le monde. Évite les Gémeaux, ils changent de rôle à chaque round.",
+      "Les Vierges structurent ton tempo, les Scorpions boostent ta vision.",
     recommendation:
-      "Offre-toi un jour sans ranked. Ton karma en a besoin. Et ton écran.",
+      "Le contrôle du tempo fait plus de kills que le meilleur DPS.",
   },
   {
     slug: "verseau",
     signe: "Verseau",
-    eloCosmique: "2670 – Vibes cosmiques au vert, synchro presque magique",
+    eloCosmique: 1980,
     prediction:
-      "Tu captes les mouvements avant qu’ils ne se dessinent, tu pinges au bon moment, tu rotates comme si tu lisais dans les logs serveur. Même quand les coéquipiers font du freestyle, tu trouves comment en tirer profit. Aujourd’hui, ton game sense frôle la clairvoyance.",
+      "Tu sors des sentiers battus : build bizarre, route décalée… Parfois ça marche, parfois ça fait rire le killfeed. Aujourd’hui, les étoiles te disent de rester créatif — mais pas aveuglément.",
     compatibility:
-      "Les Gémeaux stimuleront ta créativité tactique, les Balances t’aideront à garder ton flow harmonieux.",
-    recommendation:
-      "Quand l’instinct parle juste, inutile de trop intellectualiser.",
+      "Les Gémeaux partagent ton grain de folie, les Vierges te recadrent.",
+    recommendation: "L’originalité frappe fort quand elle est maîtrisée.",
   },
   {
     slug: "poissons",
     signe: "Poissons",
-    eloCosmique: "1210 – Brouillard mental en approche, les signaux sont flous",
+    eloCosmique: 2850,
     prediction:
-      "Tu veux bien faire, tu sens les choses… mais entre les pushs douteux, les pings contradictoires et ce mate qui rage sur le chat vocal, ton focus fond comme un shield mal timé. Tu risques de suivre des appels absurdes juste parce qu’ils étaient dits avec conviction.",
-    compatibility:
-      "Les Cancers sauront te recentrer, les Scorpions t’aideront à naviguer sans trop te perdre.",
-    recommendation:
-      "Fais confiance à ton ressenti, mais vérifie quand même la mini-map.",
+      "Les vibes sont bonnes, les games coulent toutes seules. Tu te glisses dans chaque combat comme une ulti bien placée, et les allies te suivent sans râler. Tu ne rêves pas, c’est vraiment ta journée.",
+    compatibility: "Les Cancers t’apaisent, les Verseaux te stimulent.",
+    recommendation: "Quand l’harmonie est là, ne cherche pas à en faire plus.",
   },
 ];

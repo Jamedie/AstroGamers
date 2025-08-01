@@ -1,0 +1,91 @@
+---
+import { Image } from "astro:assets";
+
+// Tu peux éventuellement passer une props si tu veux rendre ça dynamique plus tard
+---
+
+<section class="other-projects">
+  <h4>Mes autres sites</h4>
+  <div class="projects-grid">
+    <a
+      href="https://innovaition-outdoor.web.app/"
+      target="_blank"
+      class="project-card"
+      ><div class="project-title">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 256 256"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="256" height="256" rx="48" fill="#3C3C3C"></rect>
+          <path
+            d="M192 112H144V64H112V112H64V144H112V192H144V144H192V112Z"
+            fill="#FBCB6B"></path>
+        </svg>
+        <h5>InnovAItion Outdoor</h5>
+      </div>
+      <p>
+        L'excellence de l'intelligence artificielle au service de vos moments en
+        plein air.
+      </p>
+    </a>
+  </div>
+</section>
+
+<style>
+  .other-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background-color: #1e1e2f;
+    border: 1px solid #333;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition:
+      transform 0.2s ease,
+      background-color 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    background-color: #2d2d4a;
+  }
+
+  .project-card h5 {
+    font-family: "Oxanium", sans-serif;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .project-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-title h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Oxanium", sans-serif;
+  }
+</style>

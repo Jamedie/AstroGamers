@@ -7,6 +7,7 @@ import Footer from "../../components/Footer.astro";
 // Import global styles
 import "../../styles/fonts.css";
 import "../../styles/global.css";
+import Icon from "../../components/Icon.astro";
 
 export async function getStaticPaths() {
   return horoscopes.map((entry) => ({
@@ -19,6 +20,27 @@ const data = horoscopes.find((h) => h.slug === slug);
 if (!data) throw new Error("Signe inconnu");
 ---
 
+<script type="module">
+  const shareBtn = document.getElementById("share-button");
+
+  shareBtn?.addEventListener("click", async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: document.title,
+          text: "Découvre ton horoscope gaming du jour sur AstroG@mers !",
+          url: window.location.href,
+        });
+        console.log("Contenu partagé avec succès");
+      } catch (error) {
+        console.error("Erreur lors du partage :", error);
+      }
+    } else {
+      alert("Le partage n'est pas pris en charge par ce navigateur.");
+    }
+  });
+</script>
+
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -30,6 +52,18 @@ if (!data) throw new Error("Signe inconnu");
 
     <main>
       <ZodiacPageContent {...data} />
+
+      <div class="share-button-wrapper">
+        <p>Partage ton horoscope</p>
+
+        <button
+          id="share-button"
+          class="share-button"
+          aria-label="Partager ton horoscope"
+        >
+          <span class="icon light"><Icon icon="share-network" /></span>
+        </button>
+      </div>
     </main>
 
     <div class="particles">
@@ -92,5 +126,29 @@ if (!data) throw new Error("Signe inconnu");
       top: -10%;
       transform: translateY(-100%) scale(0.5);
     }
+  }
+
+  .share-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .share-button {
+    font-family: "Oxanium", sans-serif;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent-regular);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .share-button:hover {
+    background-color: var(--accent-light);
   }
 </style>

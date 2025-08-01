@@ -1,0 +1,32 @@
+name: Génération quotidienne des horoscopes
+
+on:
+  schedule:
+    - cron: "1 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate-horoscope:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Installation des dépendances
+        run: npm ci
+
+      - name: Exécution du script de génération
+        run: node scripts/generate-horoscope.ts
+
+      - name: Commit et push des horoscopes
+        run: |
+          git config --global user.name "AstroBot"
+          git config --global user.email "astrobot@example.com"
+          git add src/data/horoscopes.ts
+          git commit -m "♻️ Horoscope du jour auto-généré"
+          git push

@@ -2,12 +2,18 @@ name: Génération quotidienne des horoscopes
 
 on:
   schedule:
+    # S'exécute tous les jours à 00:01 UTC
     - cron: "1 0 * * *"
   workflow_dispatch:
 
 jobs:
   generate-horoscope:
     runs-on: ubuntu-latest
+
+    # 3. Donner la permission d'écrire le contenu
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout du repo
         uses: actions/checkout@v3
@@ -20,13 +26,21 @@ jobs:
       - name: Installation des dépendances
         run: npm ci
 
+      - name: Installation de ts-node
+        run: npm install -g ts-node
+
       - name: Exécution du script de génération
-        run: node scripts/generate-horoscope.ts
+        # 1. Utiliser ts-node pour exécuter le script
+        # 2. Transmettre la clé API via les secrets
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: ts-node scripts/generate-horoscope.ts
 
       - name: Commit et push des horoscopes
         run: |
-          git config --global user.name "AstroBot"
-          git config --global user.email "astrobot@example.com"
+          git config --global user.name "AstroBot 🤖"
+          git config --global user.email "actions@github.com"
           git add src/data/horoscopes.ts
-          git commit -m "♻️ Horoscope du jour auto-généré"
+          # Vérifie s'il y a des changements à commit avant de le faire
+          git diff-index --quiet HEAD || git commit -m "♻️ Horoscope du jour auto-généré"
           git push

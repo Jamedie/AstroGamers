@@ -9,8 +9,6 @@ on:
 jobs:
   generate-horoscope:
     runs-on: ubuntu-latest
-
-    # 3. Donner la permission d'écrire le contenu
     permissions:
       contents: write
 
@@ -23,16 +21,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: Installation des dépendances
+      - name: Installation des dépendances (y compris ts-node)
         run: npm ci
-
-      - name: Installation de ts-node
-        run: npm install -g ts-node
 
       - name: Exécution du script de génération
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        # Utilisez "npx ts-node" au lieu de "node"
         run: npx ts-node scripts/generate-horoscope.ts
 
       - name: Commit et push des horoscopes

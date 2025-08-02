@@ -23,8 +23,10 @@ L’horoscope doit être valable pour un seul signe astrologique et couvrir les 
 - Autorisé à suggérer de ne pas jouer aujourd’hui ou de faire une pause, mais subtilement et sans être agressif.
 
 3. **Compatibilité astrale**
-- Liste de 1 à 3 signes astrologiques.
-- Évoque une affinité, un soutien ou une complémentarité, jamais une garantie de win.
+- Rédige une seule phrase qui nomme de 1 à 3 signes et décrit leur soutien de manière stylée. Ne te contente JAMAIS de juste lister les signes.
+- Exemples :
+  - “Les Lions t’aideront à garder la tête froide.”
+  - “Les Béliers partagent ton énergie, mais attention à l’impulsivité combinée. Et les Scorpions sont là pour te rappeler que la patience est une vertu.”
 
 4. **Recommandation astrale**
 - Une phrase poétique ou stylée qui donne un conseil indirect, réaliste.

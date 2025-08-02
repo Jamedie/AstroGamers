@@ -50,10 +50,9 @@ compatibility : [1 à 3 signes avec courte explication stylée]
 
 recommendation : [Conseil stylé, subtil et réaliste]
 
-en format Json
+en format Json avec les 12 signes 
 
 Important :
 - Ne jamais utiliser d’émojis
 - Ne jamais structurer en bullet points
-- Reste en dessous de 800 caractères
-`;
+- Reste en dessous de 800 caractères`;

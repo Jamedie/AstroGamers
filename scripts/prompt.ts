@@ -7,52 +7,45 @@ L’horoscope doit être valable pour un seul signe astrologique et couvrir les 
 1. **Élo Cosmique**
 - Génère un score entre 0 et 3000.
 - Fournis un bref commentaire cohérent avec le score :
-  - 0–999 = Faible → malchance, confusion, tensions
-  - 1000–1999 = Moyen → journée incertaine, instable
-  - 2000–2599 = Bonne → opportunités, équilibre
-  - 2600–3000 = Excellente → réussite probable, tout s’aligne
+  - 0–999 = Faible → malchance, confusion, tensions
+  - 1000–1999 = Moyen → journée incertaine, instable
+  - 2000–2599 = Bonne → opportunités, équilibre
+  - 2600–3000 = Excellente → réussite probable, tout s’aligne
 
 2. **Prédiction**
 - Un paragraphe fluide de 3 à 4 lignes, drôle et ancré dans le réel (ex : matchmaking étrange, teammates imprévisibles, loot frustrant…).
 - Ne pas nommer explicitement MOBA/shooter/BR, mais évoquer leurs mécaniques de façon naturelle.
 - Style : un peu ironique, auto-dérision, observations vécues
 - Ton global : 
-  - 65% des horoscopes doivent être neutres ou négatifs
-  - 35% peuvent être positifs
+  - 65% des horoscopes doivent être neutres ou négatifs
+  - 35% peuvent être positifs
 - Pas de toxicité ni incitation à ragequit, à insulter, à troll, à grief.
 - Autorisé à suggérer de ne pas jouer aujourd’hui ou de faire une pause, mais subtilement et sans être agressif.
 
 3. **Compatibilité astrale**
 - Liste de 1 à 3 signes astrologiques.
 - Évoque une affinité, un soutien ou une complémentarité, jamais une garantie de win.
-- Exemples : 
-  - “Les Lions t’aideront à garder la tête froide.”
-  - “Les Béliers partagent ton énergie, mais attention à l’impulsivité combinée.”
 
 4. **Recommandation astrale**
 - Une phrase poétique ou stylée qui donne un conseil indirect, réaliste.
-- Jamais de consigne brutale (pas de “quitte la game”, “AFK”, etc.)
-- Exemples :
-  - “Aujourd’hui, mieux vaut observer deux fois avant d’agir.”
-  - “Une petite pause pourrait t’apporter plus qu’une win.”
+
+5. **Règle technique impérative**
+- N'utilise **jamais** de backticks (\`) pour styliser un mot.
+- N'utilise **jamais** de guillemets doubles (") à l'intérieur des valeurs textuelles (comme la prédiction ou la recommandation).
+- Le texte de chaque champ doit être une chaîne de caractères pure. C'est la règle la plus importante pour garantir un JSON valide.
 
 ### Format de sortie souhaité :
 
-slug : [slug du signe]
-
-signe : [Nom du signe]
-
-eloCosmique : [Nombre sur 3000] – [Bref commentaire]
-
-prediction : [Texte de 3 à 4 lignes, style immersif et drôle]
-
-compatibility : [1 à 3 signes avec courte explication stylée]
-
-recommendation : [Conseil stylé, subtil et réaliste]
-
-en format Json avec les 12 signes 
+Tu dois retourner un tableau JSON contenant les 12 signes du zodiaque. Chaque objet du tableau doit suivre cette structure :
+{
+"slug": "belier",
+"signe": "Bélier",
+"eloCosmique": "2450 – Bonne vibe, les games peuvent tourner à ton avantage.",
+"prediction": "Le matchmaking semble enfin avoir compris que tu n'es pas là pour faire de la figuration. Tes alliés suivront tes calls comme si leur vie en dépendait, et même ce tir à travers la fumée que tu pensais hasardeux trouvera sa cible. Profites-en.",
+"compatibility": "Lion, Sagittaire t'apporteront un soutien inattendu.",
+"recommendation": "La confiance est une ressource, ne la gaspille pas en une seule partie."
+}
 
 Important :
-- Ne jamais utiliser d’émojis
-- Ne jamais structurer en bullet points
-- Reste en dessous de 800 caractères`;
+- Ne jamais utiliser d’émojis.
+- Le résultat final doit être uniquement le tableau JSON, sans texte d'introduction ni de conclusion, et sans l'envelopper dans des blocs de code Markdown.`;

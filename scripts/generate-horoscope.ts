@@ -21,12 +21,18 @@ async function getHoroscopes() {
     const response = await result.response;
     const jsonRaw = response.text();
 
-    // 3. Sécuriser le parsing JSON comme vous l'aviez prévu
-    const horoscopes = JSON.parse(jsonRaw);
+    // ---- DEBUT DE LA CORRECTION ----
+    // Nettoie la réponse pour enlever les blocs de code Markdown
+    const cleanedJson = jsonRaw
+      .replace(/^```json\s*/, "") // Supprime le ```json du début
+      .replace(/```$/, ""); // Supprime le ``` de la fin
+    // ---- FIN DE LA CORRECTION ----
+
+    // Parse le JSON nettoyé
+    const horoscopes = JSON.parse(cleanedJson);
     return horoscopes;
   } catch (error) {
     console.error("Erreur lors de la génération ou du parsing JSON:", error);
-    // Quitte le script en erreur pour que la GitHub Action échoue et vous notifie
     process.exit(1);
   }
 }

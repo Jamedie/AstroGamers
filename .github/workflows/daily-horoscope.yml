@@ -30,11 +30,10 @@ jobs:
         run: npm install -g ts-node
 
       - name: Exécution du script de génération
-        # 1. Utiliser ts-node pour exécuter le script
-        # 2. Transmettre la clé API via les secrets
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: ts-node scripts/generate-horoscope.ts
+        # Utilisez "npx ts-node" au lieu de "node"
+        run: npx ts-node scripts/generate-horoscope.ts
 
       - name: Commit et push des horoscopes
         run: |

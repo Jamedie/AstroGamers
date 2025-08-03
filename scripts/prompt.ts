@@ -50,4 +50,5 @@ Tu dois retourner un tableau JSON contenant les 12 signes du zodiaque. Chaque ob
 
 Important :
 - Ne jamais utiliser d’émojis.
-- Le résultat final doit être uniquement le tableau JSON, sans texte d'introduction ni de conclusion, et sans l'envelopper dans des blocs de code Markdown.`;
+- Le résultat final doit être uniquement le tableau JSON, sans texte d'introduction ni de conclusion, et sans l'envelopper dans des blocs de code Markdown.
+- Le slug des poissons a un s`;

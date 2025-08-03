@@ -39,6 +39,12 @@ if (!data) throw new Error("Signe inconnu");
       alert("Le partage n'est pas pris en charge par ce navigateur.");
     }
   });
+
+  // add redirection if slug is poissons
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("slug") === "poissons") {
+    window.location.href = "/signe/poisson";
+  }
 </script>
 
 <html lang="fr">

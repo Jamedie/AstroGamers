@@ -75,7 +75,7 @@ export const zodiacSigns: ZodiacSign[] = [
   },
   {
     name: "Poissons",
-    slug: "poisson",
+    slug: "poissons",
     image: "/assets/zodiac/poisson.webp",
     dateRange: "20 février - 20 mars",
   },

@@ -73,7 +73,6 @@ import Icon from "./Icon.astro";
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     padding: 2rem;
   }
 
@@ -84,6 +83,7 @@ import Icon from "./Icon.astro";
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
     gap: 2rem;
   }
@@ -144,7 +144,7 @@ import Icon from "./Icon.astro";
   .hero-badges {
     position: absolute;
     top: 80%;
-    right: -60px;
+    right: -20px;
     transform: translateY(-50%);
     width: 120px;
     height: 260px;
@@ -245,6 +245,18 @@ import Icon from "./Icon.astro";
 
     .hero-text .title {
       font-size: 2.2rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero-image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .astro-wheel {
+      display: none;
     }
   }
 </style>

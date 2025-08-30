@@ -9,11 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.12.3",
-    "@google/generative-ai": "^0.21.0"
+    "@google/generative-ai": "^0.24.1",
+    "astro": "^5.12.3"
   },
   "devDependencies": {
-    "typescript": "^5.6.2",
     "ts-node": "^10.9.2"
   }
 }

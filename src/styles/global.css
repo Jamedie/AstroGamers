@@ -160,6 +160,11 @@ body {
   margin: 0;
 }
 
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;

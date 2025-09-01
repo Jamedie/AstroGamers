@@ -101,7 +101,7 @@ import ThemeToggle from "./ThemeToggle.astro";
     color: var(--accent-text-over);
   }
 
-  .wrapper {
+  .nav-wrapper.wrapper {
     max-width: 83rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
@@ -113,5 +113,28 @@ import ThemeToggle from "./ThemeToggle.astro";
     display: flex;
     align-items: center;
     gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .site-header .nav-wrapper {
+      gap: 0.5rem !important;
+    }
+
+    .site-header .site-nav ul {
+      gap: 0.5rem !important;
+    }
+
+    .site-header .site-nav a {
+      font-size: 0.85rem !important;
+    }
+
+    .site-header .nav-wrapper.wrapper {
+      padding-inline: 0.75rem !important;
+      padding: 8px 0.75rem !important;
+    }
+
+    .site-header .logo {
+      padding: 0.5rem !important;
+    }
   }
 </style>

@@ -37,20 +37,20 @@ import ZodiacCard from "./ZodiacCard.astro";
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 3fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1024px) {
     .grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (min-width: 600px) and (max-width: 1000px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 600px) {
+    .zodiac-grid .grid {
+      grid-template-columns: 1fr !important;
     }
   }
 </style>

@@ -5,6 +5,9 @@ L’horoscope doit être valable pour un seul signe astrologique et couvrir les 
 ### Règles obligatoires :
 
 1. **Élo Cosmique**
+Pour assurer une grande variété d'un jour à l'autre et éviter la répétition, 
+la distribution des scores Élo Cosmique parmi les 12 signes doit être significativement différente à chaque génération. Évite de regrouper la majorité des signes dans la même tranche de score.
+Chaque jour doit présenter un mélange crédible de chanceux, de malchanceux et de ceux dont la journée est incertaine.
 - Génère un score entre 0 et 3000.
 - Fournis un bref commentaire cohérent avec le score :
   - 0–999 = Faible → malchance, confusion, tensions

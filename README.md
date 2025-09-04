@@ -1,6 +1,6 @@
 # 🌠 Astrog\@mers
 
-![AstroGamers](https://count.getloli.com/@AstroGamers?name=AstroGamers&theme=miku&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto)
+![AstroGamers](https://count.getloli.com/@AstroGamers?name=AstroGamers&theme=miku&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=0)
 
 Un projet personnel mêlant **développement web**, **expérimentation UI** et **univers du jeu vidéo**.
 Créé avec [Astro](https://astro.build), hébergé sur [Netlify](https://www.netlify.com/).

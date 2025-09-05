@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ctaButton.addEventListener("click", (e) => {
       e.preventDefault();
       launchParticles(ctaButton, sign);
+      umami.track("zodiac-finder-click", { sign });
     });
 
     document

@@ -1,99 +1,99 @@
-// Fichier auto-généré le 9/12/2025}
+// Fichier auto-généré le 9/13/2025}
 export const horoscopes = [
   {
     "slug": "belier",
     "signe": "Bélier",
-    "eloCosmique": "1250 – Journée incertaine, attention aux mauvaises décisions.",
-    "prediction": "Prépare-toi à des parties où tes alliés semblent jouer à un jeu différent. Tes réflexes seront mis à l'épreuve, et la frustration sera probablement au rendez-vous. Garde ton sang-froid, même si la défaite est amère.",
-    "compatibility": "Taureau, Vierge vous apporteront un peu de stabilité.",
-    "recommendation": "La patience est une arme secrète sur le champ de bataille."
+    "eloCosmique": "2150 – Bonne journée, mais attention aux mauvaises surprises.",
+    "prediction": "Prépare-toi à des parties explosives, Bélier !  Tes actions seront imprévisibles, voire illogiques, mais efficaces.  Même si ton équipe te suivra à contrecoeur, tes actions seront miraculeusement efficaces.",
+    "compatibility": "Taureau et Gémeaux te maintiendront sur terre, mais attention à leur lenteur.",
+    "recommendation": "La victoire ne vient pas seule, fais preuve de patience."
   },
   {
     "slug": "taureau",
     "signe": "Taureau",
-    "eloCosmique": "2800 – Excellente journée, tout s'aligne pour toi.",
-    "prediction": "Le destin est de ton côté.  Tes compétences seront sublimées, tes choix judicieux, et la chance te sourira même dans les situations les plus périlleuses.  Profite de cette journée glorieuse.",
-    "compatibility": "Vierge, Capricorne te permettront de rester concentré.",
-    "recommendation": "La victoire est un voyage, savoure chaque étape."
+    "eloCosmique": "1200 – Journée incertaine, prudence.",
+    "prediction": "Les parties seront longues et fastidieuses, Taureau.  Tu auras l'impression de pousser un rocher jusqu'au sommet d'une montagne.  La patience est ta seule alliée.",
+    "compatibility": "Vierge et Capricorne t'apporteront leur calme.",
+    "recommendation": "L'énergie se conserve, adapte-toi."
   },
   {
     "slug": "gemeaux",
     "signe": "Gémeaux",
-    "eloCosmique": "750 – Faible, attention aux pièges.",
-    "prediction": "La journée s'annonce chaotique. Les aléas du matchmaking seront plus présents que jamais. Des bugs, des lags, et des coéquipiers imprévisibles te mettront à rude épreuve.  Prends une pause, ça ne sera peut-être pas ta journée.",
-    "compatibility": "Balance, Verseau pour atténuer le chaos ambiant.",
-    "recommendation": "La sagesse consiste parfois à savoir abandonner une partie."
+    "eloCosmique": "2800 – Excellente journée, profite-en !",
+    "prediction": "Aujourd'hui, Gémeaux, tu rayonneras.  Tes actions seront précises et efficaces, tes décisions justes. La chance te sourit et tes équipiers te suivront sans hésitation. La victoire te tend les bras.",
+    "compatibility": "Balance et Verseau te stimuleront.",
+    "recommendation": "La victoire est un chemin, non une destination."
   },
   {
     "slug": "cancer",
     "signe": "Cancer",
-    "eloCosmique": "1800 – Journée instable, quelques moments de brillance possibles.",
-    "prediction": "Des hauts et des bas sont à prévoir.  Tu peux briller par moments, mais aussi sombrer dans la frustration.  L'important est de rester concentré sur ton objectif et d'éviter les prises de tête inutiles.",
-    "compatibility": "Scorpion, Poissons pour une meilleure gestion des émotions.",
-    "recommendation": "Même dans l'échec, il y a des leçons à apprendre."
+    "eloCosmique": "750 – Journée difficile, reste prudent.",
+    "prediction": "Cancer, prépare-toi à la frustration.  Le matchmaking te réservera des surprises désagréables, et tes alliés ne seront pas à la hauteur.  Une journée à éviter si possible.",
+    "compatibility": "Poissons te rappelleront qu'il y a une vie après le jeu.",
+    "recommendation": "La patience est une vertu, mais parfois, il faut savoir s'éloigner."
   },
   {
     "slug": "lion",
     "signe": "Lion",
-    "eloCosmique": "2300 – Bonne journée, des opportunités se présentent.",
-    "prediction": "Tu rayonneras sur le champ de bataille, guidant tes alliés vers la victoire avec charisme. Tes actions audacieuses seront récompensées, et même les situations les plus désespérées se transformeront en triomphe.",
-    "compatibility": "Bélier, Sagittaire amplifieront ta puissance.",
-    "recommendation": "Un chef inspire par l'exemple, pas par la force."
+    "eloCosmique": "2300 – Bonne journée, tu peux briller !",
+    "prediction": "Le destin te sourit, Lion.  Tes compétences seront mises en avant, et même les situations les plus périlleuses te permettront de briller. Profite de cette aura victorieuse.",
+    "compatibility": "Bélier, Sagittaire, partagez votre énergie.",
+    "recommendation": "La force réside dans le calme, utilise la sagesse."
   },
   {
     "slug": "vierge",
     "signe": "Vierge",
-    "eloCosmique": "2100 – Bonne journée, tu seras précis et efficace.",
-    "prediction": "Ta stratégie impeccable et tes réflexes affûtés te mèneront à la victoire.  Tu seras le pilier de ton équipe, apportant stabilité et efficacité. Sois fier de ta performance.",
-    "compatibility": "Taureau, Capricorne pour une synergie redoutable.",
-    "recommendation": "La perfection n'est pas un but, mais une aspiration."
+    "eloCosmique": "1500 – Journée mitigée, attention à la fatigue.",
+    "prediction": "Vierge, prudence.  Tes actions seront efficaces, mais tu risques la fatigue et l'épuisement.  Méfie-toi des imprévus et des erreurs de tes alliés.",
+    "compatibility": "Taureau et Capricorne, la synergie est au rendez-vous.",
+    "recommendation": "La précision est une arme, maîtrise la."
   },
   {
     "slug": "balance",
     "signe": "Balance",
-    "eloCosmique": "1500 – Journée incertaine, équilibre fragile.",
-    "prediction": "L'équilibre sera précaire.  Tu seras tiraillé entre moments de réussite et de frustration.  Essaye de garder le calme et de faire des choix judicieux pour éviter de basculer du bon côté vers le mauvais.",
-    "compatibility": "Gémeaux, Verseau pour trouver l'harmonie.",
-    "recommendation": "L'harmonie est une force, la discorde une faiblesse."
+    "eloCosmique": "2700 – Excellente journée, tout est possible.",
+    "prediction": "La chance te sourit, Balance.  Tes capacités diplomatiques et stratégiques seront pleinement mises en valeur, et tu pourras mener ton équipe vers la victoire.",
+    "compatibility": "Gémeaux et Verseau, équilibrez vos forces.",
+    "recommendation": "L'équilibre est une force, cultive la."
   },
   {
     "slug": "scorpion",
     "signe": "Scorpion",
-    "eloCosmique": "500 – Faible, journée difficile.",
-    "prediction": "La frustration sera ton pire ennemi aujourd'hui.  Les parties seront difficiles, les alliés imprévisibles, et la chance te fera cruellement défaut.  Il serait peut-être sage de prendre une pause.",
-    "compatibility": "Cancer, Poissons pour une meilleure gestion du stress.",
-    "recommendation": "La patience est une vertu rare, mais précieuse."
+    "eloCosmique": "1000 – Journée instable, attention aux pièges.",
+    "prediction": "Scorpion, vigilance.  Les pièges seront nombreux et insidieux, aussi bien de la part de tes adversaires que de tes alliés. Reste sur tes gardes.",
+    "compatibility": "Capricorne, une alliance solide.",
+    "recommendation": "La persévérance est une arme, manie la."
   },
   {
     "slug": "sagittaire",
     "signe": "Sagittaire",
-    "eloCosmique": "2700 – Excellente journée, tu frapperas fort.",
-    "prediction": "Tu seras en pleine forme, précis et efficace.  Tes compétences seront exacerbées, et même les adversaires les plus coriaces n'y pourront rien. Profites-en au maximum.",
-    "compatibility": "Bélier, Lion pour une domination totale.",
-    "recommendation": "Le succès est un voyage, et non une destination."
+    "eloCosmique": "2650 – Excellente journée, fonce !",
+    "prediction": "Sagittaire, c'est le jour idéal pour prendre des risques calculés. Ton audace et ton intuition te mèneront vers des victoires éclatantes. La chance te sourira.",
+    "compatibility": "Bélier et Lion, l'attaque est la meilleure défense.",
+    "recommendation": "Le courage est une force, libère la."
   },
   {
     "slug": "capricorne",
     "signe": "Capricorne",
-    "eloCosmique": "2050 – Bonne journée, avec beaucoup de concentration.",
-    "prediction": "Ta rigueur et ta stratégie seront tes meilleurs atouts. Chaque action sera calculée, chaque mouvement précis.  La victoire sera le fruit de ton travail acharné.",
-    "compatibility": "Taureau, Vierge pour une puissance dévastatrice.",
-    "recommendation": "La discipline est la clé de la réussite."
+    "eloCosmique": "1800 – Journée mitigée, la patience est de mise.",
+    "prediction": "Capricorne, la patience sera ta meilleure alliée.  Les parties seront tendues, et tes alliés pourront te mettre à l'épreuve.  Reste concentré sur ton objectif.",
+    "compatibility": "Vierge et Scorpion, une complémentarité parfaite.",
+    "recommendation": "La patience est une vertu, cultive la."
   },
   {
     "slug": "verseau",
     "signe": "Verseau",
-    "eloCosmique": "1100 – Journée incertaine, imprévisible.",
-    "prediction": "Prépare-toi à l'inattendu.  Des événements inattendus bouleverseront tes parties.  Adapte-toi, sois flexible et laisse parler ton ingéniosité.",
-    "compatibility": "Gémeaux, Balance pour une meilleure navigation.",
-    "recommendation": "L'improvisation est parfois la meilleure stratégie."
+    "eloCosmique": "2200 – Bonne journée, l'innovation est de mise.",
+    "prediction": "Verseau, l'innovation sera ta clé du succès.  Sois audacieux dans tes actions, explore de nouvelles stratégies et surprends tes adversaires.",
+    "compatibility": "Gémeaux et Balance, la créativité est votre alliée.",
+    "recommendation": "L'innovation est une force, explore la."
   },
   {
     "slug": "poissons",
     "signe": "Poissons",
-    "eloCosmique": "300 – Faible, journée à éviter.",
-    "prediction": "Le chaos règnera sur tes parties. Frustration, imprévu et malchance seront au rendez-vous.  Peut-être serait-il plus sage de laisser tomber les jeux aujourd'hui.",
-    "compatibility": "Cancer, Scorpion pour une meilleure gestion de la frustration.",
-    "recommendation": "La sagesse est de savoir quand prendre du recul."
+    "eloCosmique": "350 – Journée difficile, repose-toi.",
+    "prediction": "Poissons, la journée sera difficile.  Tu auras l'impression de nager à contre-courant.  Il est peut-être préférable de faire une pause.",
+    "compatibility": "Cancer, une réconciliation nécessaire.",
+    "recommendation": "Le repos est une nécessité, accepte la."
   }
 ];

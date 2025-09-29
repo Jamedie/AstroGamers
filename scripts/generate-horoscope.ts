@@ -17,7 +17,6 @@ const promptFilePath = "scripts/prompt.ts";
 try {
   promptContent = fs.readFileSync(promptFilePath, "utf-8");
 } catch (error) {
-  // ✅ Correction de la syntaxe ici (guillemets pour le template literal)
   console.error(
     `🚨 ERREUR: Le fichier prompt n'a pas pu être lu à: ${promptFilePath}`
   );
@@ -25,7 +24,6 @@ try {
   process.exit(1);
 }
 
-// ✅ Correction de la syntaxe ici (accents graves)
 const prompt = `
   ${promptContent}
 
@@ -41,14 +39,12 @@ async function getHoroscopes() {
 
     const jsonRaw = result.text;
 
-    // 🎯 CORRECTION: Vérifiez que le texte n'est pas vide/undefined
     if (!jsonRaw || jsonRaw.trim() === "") {
       throw new Error(
         "La réponse de l'API Gemini était vide ou non textuelle."
       );
     }
 
-    // La ligne 47 (où était l'erreur) est maintenant sécurisée
     const cleanedJson = jsonRaw.replace(/^```json\s*/, "").replace(/```$/, "");
 
     const horoscopes = JSON.parse(cleanedJson);
@@ -62,7 +58,6 @@ async function getHoroscopes() {
 (async () => {
   const horoscopes = await getHoroscopes();
   if (horoscopes) {
-    // ✅ Correction de la syntaxe ici (accents graves)
     const output = `// Fichier auto-généré le ${new Date().toLocaleDateString()}}\nexport const horoscopes = ${JSON.stringify(
       horoscopes,
       null,
@@ -72,7 +67,6 @@ async function getHoroscopes() {
     console.log("✅ Horoscope du jour généré !");
   }
 })().catch((e) => {
-  // 🎯 AJOUT CRITIQUE : Ce catch final capture les erreurs asynchrones de dernière minute
   console.error(
     "🚨 ERREUR ASYNCHRONE NON GÉRÉE (VÉRIFIEZ LA CLÉ API OU LA VERSION NODE)",
     e

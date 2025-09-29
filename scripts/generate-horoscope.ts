@@ -34,16 +34,21 @@ const prompt = `
 
 async function getHoroscopes() {
   try {
-    // ✅ Correction du nouveau SDK : generateContent est appelé sur genAI.models
     const result = await genAI.models.generateContent({
       model: "gemini-2.5-flash",
       contents: prompt,
     });
 
-    // ✅ Correction du nouveau SDK : Le texte est sur .text, pas .text()
     const jsonRaw = result.text;
 
-    // NOTE: Votre nettoyage de JSON (replace) est inhabituel, mais s'il fonctionnait avant, nous le gardons.
+    // 🎯 CORRECTION: Vérifiez que le texte n'est pas vide/undefined
+    if (!jsonRaw || jsonRaw.trim() === "") {
+      throw new Error(
+        "La réponse de l'API Gemini était vide ou non textuelle."
+      );
+    }
+
+    // La ligne 47 (où était l'erreur) est maintenant sécurisée
     const cleanedJson = jsonRaw.replace(/^```json\s*/, "").replace(/```$/, "");
 
     const horoscopes = JSON.parse(cleanedJson);

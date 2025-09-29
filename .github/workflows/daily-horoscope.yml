@@ -25,7 +25,6 @@ jobs:
         run: npm ci
 
       - name: Compilation du script TypeScript
-        # Nous utilisons 'npx tsc' avec la configuration spécifique
         run: npx tsc --project tsconfig.node.json
 
       - name: Exécution du script de génération

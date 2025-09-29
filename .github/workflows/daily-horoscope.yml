@@ -27,7 +27,7 @@ jobs:
       - name: Exécution du script de génération
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      run: npm run build && node dist/scripts/generate-horoscope.js
+        run: node --loader ts-node/esm scripts/generate-horoscope.ts
 
       - name: Commit et push des horoscopes
         run: |

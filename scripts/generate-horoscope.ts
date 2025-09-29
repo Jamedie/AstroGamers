@@ -30,7 +30,7 @@ try {
 }
 
 const prompt = `
-  ${fs.readFileSync("scripts/prompt.ts", "utf-8")}
+  ${promptContent}
 
   Réponds UNIQUEMENT avec le contenu JSON valide, sans aucun texte, explication ou formatage \`\`\`json\`\`\` autour.
 `;

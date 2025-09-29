@@ -66,4 +66,11 @@ async function getHoroscopes() {
     fs.writeFileSync(path.resolve("src/data/horoscopes.ts"), output, "utf-8");
     console.log("✅ Horoscope du jour généré !");
   }
-})();
+})().catch((e) => {
+  // 🎯 AJOUT CRITIQUE : Ce catch final capture les erreurs asynchrones de dernière minute
+  console.error(
+    "🚨 ERREUR ASYNCHRONE NON GÉRÉE (VÉRIFIEZ LA CLÉ API OU LA VERSION NODE)",
+    e
+  );
+  process.exit(1);
+});

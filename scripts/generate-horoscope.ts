@@ -1,14 +1,10 @@
 import fs from "fs";
 import path from "path";
-// 1. Importer le SDK de Google Gemini
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// 2. Initialiser le client Gemini avec la clé d'API
-// La variable d'environnement GEMINI_API_KEY est fournie par la GitHub Action
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); // gemini-1.5-flash est rapide et économique
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-// Astuce : Précisez dans le prompt que la réponse DOIT être du JSON
 const prompt = `
   ${fs.readFileSync("scripts/prompt.ts", "utf-8")}
 
@@ -21,14 +17,8 @@ async function getHoroscopes() {
     const response = await result.response;
     const jsonRaw = response.text();
 
-    // ---- DEBUT DE LA CORRECTION ----
-    // Nettoie la réponse pour enlever les blocs de code Markdown
-    const cleanedJson = jsonRaw
-      .replace(/^```json\s*/, "") // Supprime le ```json du début
-      .replace(/```$/, ""); // Supprime le ``` de la fin
-    // ---- FIN DE LA CORRECTION ----
+    const cleanedJson = jsonRaw.replace(/^```json\s*/, "").replace(/```$/, "");
 
-    // Parse le JSON nettoyé
     const horoscopes = JSON.parse(cleanedJson);
     return horoscopes;
   } catch (error) {

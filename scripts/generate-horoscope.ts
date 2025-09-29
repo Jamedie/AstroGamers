@@ -9,8 +9,20 @@ if (!process.env.GEMINI_API_KEY) {
   process.exit(1);
 }
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+let genAI;
+let model;
+
+try {
+  // 🎯 Encapsulez la construction dans un try/catch pour capturer les erreurs d'initialisation
+  genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+  model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+} catch (e) {
+  console.error(
+    "🚨 ERREUR FATALE: La construction du client GoogleGenerativeAI a échoué. Vérifiez si la clé API est valide et active."
+  );
+  console.error(e);
+  process.exit(1);
+}
 
 let promptContent = "";
 const promptFilePath = "scripts/prompt.ts";

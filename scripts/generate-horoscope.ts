@@ -2,8 +2,32 @@ import fs from "fs";
 import path from "path";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+if (!process.env.GEMINI_API_KEY) {
+  console.error(
+    "🚨 ERREUR: La variable d'environnement GEMINI_API_KEY n'est pas définie dans votre environnement."
+  );
+  process.exit(1);
+}
+
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+
+let promptContent = "";
+const promptFilePath = "scripts/prompt.ts";
+
+try {
+  promptContent = fs.readFileSync(promptFilePath, "utf-8");
+} catch (error) {
+  // Affiche l'erreur ENOENT (si c'est bien le cas)
+  console.error(
+    `🚨 ERREUR: Le fichier prompt n'a pas pu être lu à: ${promptFilePath}`
+  );
+  console.error(
+    "Vérifiez le chemin du fichier (scripts/prompt.ts) dans le contexte d'exécution de GitHub Actions."
+  );
+  console.error(error);
+  process.exit(1);
+}
 
 const prompt = `
   ${fs.readFileSync("scripts/prompt.ts", "utf-8")}

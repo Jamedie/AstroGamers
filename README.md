@@ -65,10 +65,6 @@ src/
 Le site est déployé en continu via Netlify :
 🔗 [https://astrogamers.netlify.app](https://astrogamers.netlify.app)
 
-## Credits
-
-## Crédits
-
 ## Crédits
 
 Toute aventure cosmique commence par une étincelle. Celle d’Astrog@amers est née quelque part entre une intuition soudaine, un fond de café froid, et une envie de faire parler les étoiles autrement.

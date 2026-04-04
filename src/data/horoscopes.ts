@@ -1,99 +1,99 @@
-// Fichier auto-généré le 4/3/2026}
+// Fichier auto-généré le 4/4/2026}
 export const horoscopes = [
   {
     "slug": "belier",
     "signe": "Bélier",
-    "eloCosmique": "2650 – Excellente, la victoire te tend les bras.",
-    "prediction": "Tes prises d'initiative seront payantes, même les plus audacieuses. Attends-toi à des tirs au jugé qui toucheront, des embuscades réussies et une équipe qui suit tes calls avec une dévotion quasi mystique. C'est ton jour pour briller et emporter tes alliés vers la gloire.",
-    "compatibility": "Les Lions admireront ta bravoure et les Sagittaires te pousseront à l'action.",
-    "recommendation": "La ferveur est une flamme, utilise-la pour éclairer le chemin, pas pour te brûler."
+    "eloCosmique": "2300 – Bonne vibe, les games peuvent tourner à ton avantage.",
+    "prediction": "Aujourd'hui, tes décisions rapides seront récompensées, et même ton agressivité habituelle semblera justifiée. Attends-toi à des affrontements où le timing sera de ton côté, et tes engagements audacieux porteront leurs fruits. Profites-en, mais n'oublie pas le reste de l'équipe.",
+    "compatibility": "Les Sagittaires sauront te suivre dans tes charges, tandis que les Gémeaux t'apporteront une touche de flexibilité bienvenue.",
+    "recommendation": "L'impatience est parfois une vertu, mais la patience est toujours une leçon."
   },
   {
     "slug": "taureau",
     "signe": "Taureau",
-    "eloCosmique": "1100 – Moyen, la journée s'annonce pleine de surprises, pas toujours bonnes.",
-    "prediction": "La patience sera ta seule alliée face à un enchaînement de situations frustrantes. Entre des alliés qui semblent découvrir le jeu et un butin qui refuse obstinément de se montrer, tes nerfs seront mis à rude épreuve. Une pause stratégique avant de lancer la prochaine partie pourrait être sage.",
-    "compatibility": "Les Cancers t'apporteront le calme nécessaire et les Vierges t'aideront à structurer tes décisions.",
-    "recommendation": "Ancrer tes pieds dans la réalité virtuelle est une chose, savoir lâcher prise en est une autre."
+    "eloCosmique": "1200 – Journée incertaine, attention à la routine.",
+    "prediction": "La solidité que tu recherches dans tes équipes pourrait te faire défaut. Tes coéquipiers auront le don de se disperser au pire moment, transformant un push bien senti en une retraite précipitée. La carte semblera plus vaste que d'habitude, pleine de dangers inattendus.",
+    "compatibility": "Les Vierges t'aideront à structurer tes pensées, et les Capricornes partageront ton sens de la persévérance.",
+    "recommendation": "Le chemin le plus direct n'est pas toujours le plus sûr."
   },
   {
     "slug": "gemeaux",
     "signe": "Gémeaux",
-    "eloCosmique": "2100 – Bonne, les opportunités ne manqueront pas si tu restes concentré.",
-    "prediction": "Ta capacité à t'adapter sera ta force aujourd'hui. Que ce soit pour changer de rôle en pleine partie ou pour improviser une stratégie de dernière minute, tu feras mouche. Les communications seront fluides, et même les adversaires les plus coriaces seront déstabilisés par ton ingéniosité.",
-    "compatibility": "Les Balances apporteront un équilibre bienvenu, et les Verseaux stimuleront ta créativité.",
-    "recommendation": "La dualité de ton esprit peut être une arme à double tranchant, utilise-la avec sagesse."
+    "eloCosmique": "750 – Faible, les astres brouillent les pistes.",
+    "prediction": "Attends-toi à des dialogues de sourds avec tes partenaires. Tes signaux seront mal interprétés, tes moves anticipés de travers, et même les informations que tu donnes sembleront se perdre dans l'éther. Mieux vaut échanger des idées autour d'un autre jeu, ou faire une pause.",
+    "compatibility": "Les Balances t'offriront un équilibre précieux, et les Verseaux pourront décrypter tes messages cryptiques.",
+    "recommendation": "Le silence est parfois le meilleur des calls."
   },
   {
     "slug": "cancer",
     "signe": "Cancer",
-    "eloCosmique": "600 – Faible, les astres conspirent contre tes nerfs et ta patience.",
-    "prediction": "Le matchmaking te réservera des rencontres épiques, mais pas dans le bon sens du terme. Attends-toi à des abandons, des coéquipiers qui explorent les recoins les plus improbables de la carte, et des tirs qui traversent les murs... mais seulement pour l'ennemi. Garde ton calme, ou considère que ce n'est pas le jour idéal.",
-    "compatibility": "Les Scorpions comprendront tes frustrations, et les Poissons t'offriront une épaule virtuelle.",
-    "recommendation": "Le réconfort du foyer virtuel est parfois plus doux que l'amertume de la défaite."
+    "eloCosmique": "2100 – Bonne vibe, ton instinct sera un guide fiable.",
+    "prediction": "Ton intuition sera aiguisée, te permettant d'anticiper les embuscades et de trouver les meilleurs spots pour te refaire une santé. Les situations tendues se dénoueront grâce à ton sens de l'observation et ta capacité à protéger tes alliés les plus fragiles. Ton rôle de soutien sera crucial.",
+    "compatibility": "Les Poissons comprendront tes silences, et les Scorpions renforceront ta détermination dans l'adversité.",
+    "recommendation": "Le foyer est là où se trouve la victoire, peu importe la carte."
   },
   {
     "slug": "lion",
     "signe": "Lion",
-    "eloCosmique": "2800 – Excellente, un leadership incontestable t'attend.",
-    "prediction": "Tu rayonneras sur le champ de bataille, tes appels seront suivis à la lettre et tes actions inspireront tes alliés. Même les situations les plus désespérées se retourneront en ta faveur grâce à ta présence. Les frag facilités, les prises de position audacieuses, tout s'aligne pour que tu sois la star du jour.",
-    "compatibility": "Les Béliers respecteront ton autorité, et les Sagittaires amplifieront ton aura.",
-    "recommendation": "La couronne est lourde, mais c'est ton jeu qui la rend légère."
+    "eloCosmique": "2850 – Excellente, le show est à toi.",
+    "prediction": "Aujourd'hui, les projecteurs sont sur toi. Tes initiatives audacieuses seront couronnées de succès, tes plays improbables passeront comme une lettre à la poste, et même tes erreurs seront pardonnées par tes coéquipiers éblouis. C'est le moment de briller, Roi de la jungle, sans trop en faire.",
+    "compatibility": "Les Béliers partageront ton audace, et les Sagittaires te pousseront toujours plus loin dans tes conquêtes.",
+    "recommendation": "Chaque couronne a son poids, mais aujourd'hui, elle est légère."
   },
   {
     "slug": "vierge",
     "signe": "Vierge",
-    "eloCosmique": "1750 – Moyen, attention aux détails, ils pourraient te sauver ou te perdre.",
-    "prediction": "Ton sens de l'analyse sera crucial, car les informations clés seront rares et mal transmises. Tu devras déchiffrer les intentions adverses dans le chaos ambiant, et anticiper les mouvements de tes alliés, parfois avec peu d'indices. Un pixel mal placé, et c'est la fin du game.",
-    "compatibility": "Les Capricornes t'aideront à structurer tes stratégies, et les Taureaux t'ancreront dans la réalité du terrain.",
-    "recommendation": "La perfection est un idéal, l'efficacité une nécessité."
+    "eloCosmique": "1600 – Journée incertaine, les détails feront la différence.",
+    "prediction": "Les stratégies que tu auras méticuleusement préparées pourraient se heurter à l'imprévu le plus total. Un élément hors de ton contrôle viendra perturber l'ordre établi, te forçant à improviser. La perfection est un idéal, mais l'adaptation est une survie face au chaos ambiant.",
+    "compatibility": "Les Capricornes t'aideront à rester ancré, et les Taureaux partageront ton besoin de stabilité.",
+    "recommendation": "L'analyse est une force, mais la flexibilité en est une autre."
   },
   {
     "slug": "balance",
     "signe": "Balance",
-    "eloCosmique": "850 – Faible, le dilemme sera ton pire ennemi aujourd'hui.",
-    "prediction": "Chaque décision semblera être un choix entre la peste et le choléra. Faut-il aller aider ce coéquipier isolé ou sécuriser l'objectif ? Attaquer ou défendre ? Le moindre mouvement sera lourd de conséquences, et le jeu te mettra constamment face à des impasses stratégiques.",
-    "compatibility": "Les Gémeaux t'apporteront de nouvelles perspectives, et les Lions t'aideront à prendre des décisions fermes.",
-    "recommendation": "L'équilibre n'est pas l'immobilisme, mais l'art de bouger avec intention."
+    "eloCosmique": "500 – Faible, l'équilibre est précaire.",
+    "prediction": "Le matchmaking te mettra face à des choix impossibles. Des équipes déséquilibrées, des conflits internes dès la phase de sélection, et une impression générale que personne n'est sur la même longueur d'onde. Il serait sage de reporter les sessions compétitives, ou de jouer pour le fun.",
+    "compatibility": "Les Gémeaux t'aideront à tempérer les extrêmes, et les Verseaux apporteront une perspective rafraîchissante.",
+    "recommendation": "La meilleure décision est parfois de ne pas décider."
   },
   {
     "slug": "scorpion",
     "signe": "Scorpion",
-    "eloCosmique": "2300 – Bonne, ton intuition sera ton meilleur atout.",
-    "prediction": "Ton flair sera incroyablement aiguisé. Tu sentiras les rotations ennemies avant qu'elles n'arrivent, débusqueras les campeurs invisibles et trouveras le loot légendaire là où personne ne l'attendait. Tes adversaires ne sauront pas ce qui les a frappés.",
-    "compatibility": "Les Cancers partageront ta profondeur stratégique, et les Poissons renforceront ton sens de l'anticipation.",
-    "recommendation": "Le mystère est une arme, laisse tes adversaires deviner tes intentions."
+    "eloCosmique": "2400 – Bonne vibe, ta détermination sera payante.",
+    "prediction": "Ton regard perçant débusquera les adversaires les mieux cachés, et tes tactiques sournoises surprendront même les plus aguerris. C'est une journée où ton sens de la traque et ta patience seront des atouts majeurs pour retourner les situations désespérées, sans jamais baisser les bras.",
+    "compatibility": "Les Cancers partageront ta profondeur émotionnelle, et les Poissons t'offriront une compréhension silencieuse.",
+    "recommendation": "La victoire n'est pas donnée, elle se dérobe."
   },
   {
     "slug": "sagittaire",
     "signe": "Sagittaire",
-    "eloCosmique": "1400 – Moyen, l'aventure t'appelle, mais gare aux imprévus.",
-    "prediction": "L'exploration sera tentante, mais les embuscades se multiplieront. Tu te retrouveras souvent au cœur de l'action, parfois malgré toi, et tes tentatives de flanc seront soit géniales, soit désastreuses. Prépare-toi à des revirements de situation inattendus et à quelques chutes spectaculaires.",
-    "compatibility": "Les Béliers t'accompagneront dans tes folies, et les Lions amplifieront tes réussites.",
-    "recommendation": "La liberté est précieuse, mais une bonne carte est encore plus salvatrice."
+    "eloCosmique": "1800 – Journée incertaine, l'aventure peut être semée d'embûches.",
+    "prediction": "L'appel de l'exploration te poussera à t'aventurer au-delà des zones de sécurité, mais attention aux pièges inattendus. Le loot rare pourrait te coûter cher, et les déplacements audacieux se transformer en courses-poursuites intenses où la fuite est parfois la meilleure option.",
+    "compatibility": "Les Lions t'encourageront dans tes quêtes, et les Béliers partageront ton goût pour l'action.",
+    "recommendation": "Le voyage est la destination, mais la prudence est le bouclier."
   },
   {
     "slug": "capricorne",
     "signe": "Capricorne",
-    "eloCosmique": "700 – Faible, la persévérance sera mise à rude épreuve.",
-    "prediction": "Chaque objectif semblera inatteignable, chaque montée en puissance une épreuve de force. Tes alliés auront des difficultés à suivre un plan cohérent, et les ressources sembleront toujours manquer quand tu en auras le plus besoin. Une victoire aujourd'hui sera le fruit d'une abnégation surhumaine.",
-    "compatibility": "Les Taureaux partageront ton endurance, et les Vierges t'aideront à peaufiner tes stratégies.",
-    "recommendation": "La montagne de l'adversité est haute, mais il est permis de souffler au camp de base."
+    "eloCosmique": "2900 – Excellente, tes efforts porteront leurs fruits.",
+    "prediction": "La discipline et la persévérance qui te caractérisent seront aujourd'hui tes plus grands atouts. Tes stratégies à long terme se dérouleront sans accroc, tes ressources seront gérées avec maestria, et chaque objectif sera atteint avec une précision chirurgicale. Une journée de maître tacticien.",
+    "compatibility": "Les Vierges t'aideront à affiner les détails, et les Taureaux t'offriront une base solide pour tes ambitions.",
+    "recommendation": "La patience et le travail sont les clés de chaque forteresse."
   },
   {
     "slug": "verseau",
     "signe": "Verseau",
-    "eloCosmique": "2050 – Bonne, l'innovation paiera, surprends tes adversaires.",
-    "prediction": "Les stratégies classiques ne suffiront pas, et ton esprit novateur pourrait te jouer des tours si tu t'égares trop. Les rush improbables, les passages secrets audacieux et les compositions d'équipe originales te mèneront parfois au succès, mais aussi à des défaites mémorables. Laisse libre cours à ta créativité, mais garde un plan B.",
-    "compatibility": "Les Gémeaux te suivront dans tes expérimentations, et les Balances t'aideront à polir tes idées.",
-    "recommendation": "Les conventions sont faites pour être brisées, à condition d'avoir un plan de rechange."
+    "eloCosmique": "800 – Faible, l'originalité ne paie pas toujours.",
+    "prediction": "Tes idées novatrices pourraient ne pas être comprises ou suivies par tes partenaires, te laissant isolé dans tes tentatives. Les compositions d'équipe sembleront farfelues, et les stratégies non conventionnelles mèneront à des impasses plus qu'à des révolutions. Évite les risques inutiles.",
+    "compatibility": "Les Gémeaux t'offriront une autre perspective, et les Balances t'aideront à trouver un terrain d'entente.",
+    "recommendation": "Parfois, la voie tracée est la plus efficace."
   },
   {
     "slug": "poissons",
     "signe": "Poissons",
-    "eloCosmique": "1800 – Moyen, navigue prudemment dans les eaux troubles du matchmaking.",
-    "prediction": "L'ambiance des parties sera fluctuante, passant de moments de pur génie collectif à des périodes de cacophonie totale. Tes ressentis seront souvent justes, mais tes alliés pourraient avoir du mal à suivre tes intuitions. Attends-toi à des parties avec des hauts et des bas, où le bon déroulement dépendra beaucoup de ton influence subtile.",
-    "compatibility": "Les Cancers partageront ton empathie, et les Scorpions t'aideront à affiner tes perceptions.",
-    "recommendation": "La marée peut être changeante, mais un bon capitaine sait adapter sa voile."
+    "eloCosmique": "2200 – Bonne vibe, ton flow sera impeccable.",
+    "prediction": "Tu navigueras à travers les combats avec une aisance déconcertante, te trouvant toujours au bon endroit au bon moment pour soutenir ou finir le travail. Les synergies avec tes alliés seront naturelles, et même les situations les plus chaotiques prendront un sens limpide pour toi. Ton empathie sera une force.",
+    "compatibility": "Les Cancers comprendront tes ressentis, et les Scorpions t'apporteront une force tranquille.",
+    "recommendation": "Laisse-toi porter par le courant, il te mènera à bon port."
   }
 ];

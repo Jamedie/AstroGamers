@@ -14,13 +14,13 @@
 - [x] Créer une section `hero` pleine hauteur (`100vh`)
 - [x] Ajouter un titre fort, un sous-titre et un bouton ou icône vers la section suivante
 - [x] Ajouter un scroll fluide vers une ancre (``, `#projects`, etc.)
-- [ ] Styliser avec les variables CSS ou une nouvelle palette
+- [x] Styliser avec les variables CSS ou une nouvelle palette
 
 ---
 
 ## ✅ Étape 3 – Page About
 
-- [ ] Ajouter une section "À propos de moi" (bio, image, compétences, etc.)
+- [x] Ajouter une section "À propos de moi" (bio, image, compétences, etc.)
 - [x] Ajouter les **mentions légales** (nom, hébergeur, contact, etc.)
 - [x] Ajouter une section sur la **confidentialité des données** (RGPD simplifié)
 
@@ -60,8 +60,8 @@
 
 ## 📌 Bonus idées (pour plus tard)
 
-- [ ] Page 404 personnalisée
+- [x] Page 404 personnalisée
 - [x] Intégration des réseaux sociaux (GitHub, LinkedIn...)
 - [ ] Menu burger mobile
 - [x] Animation au scroll ou transitions douces
-- [ ] Partage social
+- [x] Partage social

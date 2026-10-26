@@ -20,10 +20,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "24.22.1"
-          registry-url: "https://registry.npmjs.org/"
 
       - name: Installation des dépendances (y compris ts-node)
-        run: npm ci
+        run: npm ci --registry=https://registry.npmjs.org/ --userconfig=/dev/null
 
       - name: Compilation du script TypeScript
         run: npx tsc --project tsconfig.node.json

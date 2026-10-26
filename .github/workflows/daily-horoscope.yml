@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "24.22.1"
+          registry-url: "https://registry.npmjs.org/"
 
       - name: Installation des dépendances (y compris ts-node)
         run: npm ci
